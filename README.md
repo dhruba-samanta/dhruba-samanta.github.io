@@ -42,7 +42,7 @@ K. B., & Hughen, K. A. (2021). [Natural and anthropogenic forcing of multi-decad
 centennial scale variability of sea surface temperature in the South China Sea](https://doi.org/10.1029/2021PA004233).
 **Paleoceanography and Paleoclimatology**, doi:. Impact Factor: 3.99
 
-*_Journal Highlight –Oct 2021 volume cover, Paleoceanography and Paleoclimatology_
+*Journal Highlight –Oct 2021 volume cover, Paleoceanography and Paleoclimatology_
 
 9) **Samanta, D.**, Goodkin, N. F. & Karnauskas, K. B. (2021). [Volume and heat transport in the
 South China Sea and Maritime Continent at present and the end of the 21st century](https://doi.org/10.1029/2020JC016901). **Journal
