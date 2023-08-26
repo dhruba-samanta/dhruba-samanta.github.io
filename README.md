@@ -19,7 +19,7 @@ Asia during Little Ice Age](https://doi.org/10.1029/2022PA004546). **Paleoceanog
 **Samanta, D.**, Pratapneni, M., Schuster, S. C., & Horton, B. P. (2023). [Prehistoric human
 migration out of Sundaland was driven by sea-level rise](https://doi.org/10.1038/s42003-023-04510-0), **Communications Biology**. Impact Factor: 6.55
 
-Media Highlight –Nanyang Technological University; Phys.org; MSN; Science Daily, etc.
+*Media Highlight –Nanyang Technological University; Phys.org; MSN; Science Daily, etc.
 
 4) Majumdar, A., **Samanta, D.**, & Das, R. (2022). [Chemical characteristics and trends of
 Indian Summer Monsoon Rainfall: A Review](https://doi.org/10.4209/aaqr.220019). **Aerosol and Air Quality Research**. Impact Factor: 4.53
@@ -48,7 +48,7 @@ centennial scale variability of sea surface temperature in the South China Sea](
 South China Sea and Maritime Continent at present and the end of the 21st century](https://doi.org/10.1029/2020JC016901). **Journal
 of Geophysical Research: Oceans**. Impact Factor: 4.33
 
-*_Among the most downloaded articles within 12 months of publication in JGR Oceans
+*Among the most downloaded articles within 12 months of publication in JGR Oceans
 _
 10) Hari Prasad, K. B. R. R., Ramu, D. A., Rao, S. A., Hameed, S. N., **Samanta, D.**, & Srivastav,
 A. (2021). [Reducing systematic biases over Indian region in CFS V2 by dynamical
