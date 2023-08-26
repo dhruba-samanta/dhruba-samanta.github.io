@@ -26,7 +26,7 @@ Indian Summer Monsoon Rainfall: A Review](https://doi.org/10.4209/aaqr.220019). 
 
 5) Kannad, A., Goodkin, N. F., **Samanta, D**., Murty, S. A., Ramos, R., Smerdon, J. E., &
 Gordon, A. (2022). [Drivers of coral reconstructed salinity in the South China Sea and
-maritime continent: the influence of the 1976 Indo-Pacific climate shift]. (https://doi.org/10.1029/2021JC017787) **Journal of
+maritime continent: the influence of the 1976 Indo-Pacific climate shift](https://doi.org/10.1029/2021JC017787). **Journal of
 Geophysical Research:Oceans**. Impact Factor: 4.33
 
 6) Kaundal, M., Raju, J. N., **Samanta, D**., & Dash, M. K. (2022). [Seasonal forcing to the
@@ -44,11 +44,11 @@ centennial scale variability of sea surface temperature in the South China Sea](
 
 *_Journal Highlight –Oct 2021 volume cover, Paleoceanography and Paleoclimatology_
 
-9) **Samanta, D.**, Goodkin, N. F. & Karnauskas, K. B. (2021). Volume and heat transport in the
-South China Sea and Maritime Continent at present and the end of the 21st century. **Journal
-of Geophysical Research: Oceans**,  doi: https://doi.org/10.1029/2020JC016901. Impact Factor: 4.33
+9) **Samanta, D.**, Goodkin, N. F. & Karnauskas, K. B. (2021). [Volume and heat transport in the
+South China Sea and Maritime Continent at present and the end of the 21st century](https://doi.org/10.1029/2020JC016901). **Journal
+of Geophysical Research: Oceans**. Impact Factor: 4.33
 
-*_Among the most downloaded articles within 12 months of publication in JGR Oceans_
+*_Among the most downloaded articles within 12 months of publication in JGR Oceans
 _
 10) Hari Prasad, K. B. R. R., Ramu, D. A., Rao, S. A., Hameed, S. N., **Samanta, D.**, & Srivastav,
 A. (2021). [Reducing systematic biases over Indian region in CFS V2 by dynamical
