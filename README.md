@@ -97,7 +97,7 @@ Ocean](https://doi.org/10.1029/2018GL079455). **Geophysical Research Letters**. 
 19) He, S., Goodkin., N., Jackisch, D., Ong, M. R., & **Samanta, D.** (2018). [Continuous real-time
 analysis of the isotopic composition of precipitation during tropical rain events: insights into
 tropical convection](https://doi.org/10.1002/hyp.11520). **Hydrological Processes**. Impact Factor: 3.57
-_
+
 *Among top 10% most downloaded papers in Hydrological Processes during Jan 2018-Dec 2019_
 
 20) Dey, S., Dash, M. K., Deb, P., **Samanta, D**., Sharma, R., Gairola, R. M., Kumar, R., &
