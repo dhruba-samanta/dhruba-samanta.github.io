@@ -10,38 +10,35 @@
 /* Body Styling */
 body {
     font-family: Arial, sans-serif;
-    background-color: white; /* Sets background color to white */
-    color: #333; /* Dark text color for readability */
+    background-color: white;
+    color: #333;
     line-height: 1.6;
-    padding-top: 50px; /* Adjusts for fixed navbar height */
+    padding-top: 60px; /* Adjusts for fixed navbar height */
 }
 
 /* Navigation Bar Styling */
 .nav-tabs {
     display: flex;
-    justify-content: center; /* Centers items horizontally */
-    align-items: center; /* Centers items vertically */
+    justify-content: center;
     background-color: #f4f4f4;
     width: 100%;
     border-bottom: 2px solid #ddd;
-    position: fixed; /* Fixes the nav bar at the top of the page */
+    position: fixed;
     top: 0;
     left: 0;
-    z-index: 1000; /* Ensures nav bar is above other content */
-    height: 50px; /* Fixed height for the navbar */
+    z-index: 1000;
+    height: 60px; /* Fixed height for the navbar */
 }
 
-/* Navigation Links Styling */
 .nav-tabs a {
     color: #333;
-    padding: 14px 20px;
+    padding: 18px 24px;
     text-decoration: none;
     font-size: 1rem;
     text-align: center;
     transition: background-color 0.3s, color 0.3s;
 }
 
-/* Hover and Active States */
 .nav-tabs a:hover {
     background-color: #007bff;
     color: white;
@@ -52,20 +49,11 @@ body {
     color: white;
 }
 
-/* Hamburger Menu Icon */
-.navbar-toggler {
+/* Tab Content Styling */
+.tabcontent {
     display: none;
-    background-color: #333;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-}
-
-.navbar-toggler div {
-    width: 25px;
-    height: 3px;
-    margin: 5px;
-    background-color: white;
+    padding: 20px;
+    border-top: none;
 }
 
 /* Container Styling */
@@ -78,151 +66,21 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Profile Image Styling */
-.profile-img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-top: 20px;
-    object-fit: cover;
-}
-
-/* Heading Styling */
-h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-    color: #333;
-}
-
-/* List Styling */
-ul,
-ol {
-    list-style-position: inside;
-    padding-left: 0;
-    margin-left: 0;
-    text-align: left;
-}
-
-ul li,
-ol li {
-    margin-bottom: 10px;
-}
-
-/* Publication List Styling */
-.publication-list {
-    margin: 20px 0;
-    padding-left: 20px;
-}
-
-.publication-list li {
-    margin-bottom: 15px;
-}
-
-/* Link Styling */
-a {
-    color: #007bff;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-a:hover {
-    color: #0056b3;
-}
-
 /* Responsive Design */
 @media (max-width: 768px) {
     .nav-tabs {
-        flex-direction: column; /* Stacks navigation items vertically */
-        height: auto; /* Adjusts height based on content */
+        flex-direction: column;
+        height: auto;
     }
 
     .nav-tabs a {
-        width: 100%; /* Ensures each link takes full width of the nav bar */
+        width: 100%;
         padding: 14px;
         font-size: 1.2rem;
-        border-bottom: 1px solid #ddd; /* Adds separation between links */
+        border-bottom: 1px solid #ddd;
     }
 
     .nav-tabs a:last-child {
-        border-bottom: none; /* Removes border from the last link */
-    }
-
-    .navbar-toggler {
-        display: block;
-        width: 100%;
-        text-align: center;
-        padding: 14px;
-        background-color: #333;
-        color: white;
-        font-size: 1.2rem;
-    }
-
-    .navbar-toggler div {
-        background-color: #fff;
-    }
-
-    .nav-links {
-        display: none;
-        width: 100%;
-        flex-direction: column;
-    }
-
-    .nav-links.active {
-        display: flex;
-    }
-
-    /* Style for DOI links */
-.publications a {
-    color: orange; /* Sets the link color to orange */
-    text-decoration: none; /* Removes underline */
-    font-weight: bold; /* Makes the link text bold */
-}
-
-.publications a:hover {
-    color: darkorange; /* Changes color on hover */
-    text-decoration: underline; /* Underlines the link on hover */
-}
-
-/* Style the tab */
-.tab {
-    overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
-    display: flex;
-    justify-content: center;
-}
-
-/* Style the buttons inside the tab */
-.tab button {
-    background-color: inherit;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 20px;
-    transition: 0.3s;
-    font-size: 17px;
-}
-
-/* Change background color of buttons on hover */
-.tab button:hover {
-    background-color: #ddd;
-}
-
-/* Create an active/current tablink class */
-.tab button.active {
-    background-color: #ccc;
-}
-
-/* Style the tab content */
-.tabcontent {
-    display: none;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-top: none;
-}
-    
-
-    .nav-tabs {
-        position: relative;
+        border-bottom: none;
     }
 }
