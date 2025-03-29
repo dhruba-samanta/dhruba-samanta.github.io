@@ -1,41 +1,26 @@
-/* General Reset */
-*,
-*::before,
-*::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Body Styling */
-body {
-    font-family: Arial, sans-serif;
-    background-color: white;
-    color: #333;
-    line-height: 1.6;
-    padding-top: 60px; /* Adjusts for fixed navbar height */
-}
-
 /* Navigation Bar Styling */
 .nav-tabs {
     display: flex;
-    justify-content: center;
+    flex-direction: column; /* Stacks the navigation items vertically */
+    justify-content: center; /* Vertically centers the navigation items */
+    align-items: center; /* Horizontally centers the navigation items */
     background-color: #f4f4f4;
     width: 100%;
     border-bottom: 2px solid #ddd;
-    position: fixed;
+    height: 100vh; /* Ensures the nav bar takes full viewport height */
+    position: fixed; /* Fixes the nav bar at the top of the page */
     top: 0;
     left: 0;
-    z-index: 1000;
-    height: 60px; /* Fixed height for the navbar */
 }
 
 .nav-tabs a {
+    display: block; /* Makes each link a block-level element */
     color: #333;
-    padding: 18px 24px;
+    padding: 14px 20px;
     text-decoration: none;
     font-size: 1rem;
     text-align: center;
+    width: 100%; /* Ensures each link takes full width of the nav bar */
     transition: background-color 0.3s, color 0.3s;
 }
 
@@ -47,40 +32,4 @@ body {
 .nav-tabs a.active {
     background-color: #28a745;
     color: white;
-}
-
-/* Tab Content Styling */
-.tabcontent {
-    display: none;
-    padding: 20px;
-    border-top: none;
-}
-
-/* Container Styling */
-.container {
-    max-width: 800px;
-    margin: 20px auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .nav-tabs {
-        flex-direction: column;
-        height: auto;
-    }
-
-    .nav-tabs a {
-        width: 100%;
-        padding: 14px;
-        font-size: 1.2rem;
-        border-bottom: 1px solid #ddd;
-    }
-
-    .nav-tabs a:last-child {
-        border-bottom: none;
-    }
 }
