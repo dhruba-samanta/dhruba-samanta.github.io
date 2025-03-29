@@ -22,8 +22,16 @@ h1 {
     color: #333;
 }
 <style>
+  ol {
+    text-align: left;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  ol li {
+    text-align: left;
+  }
     .publication-list {
-        text-align: justify;
         margin: 20px 0;
          padding-left: 20px;
     }
