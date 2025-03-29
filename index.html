@@ -3,12 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dhrubajyoti Samanta</title>
+    <title>Tabbed Navigation</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav class="nav-tabs">
-        <button class="navbar-toggler" onclick="toggleMenu()">
+    <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'About')">About Me</button>
+        <button class="tablinks" onclick="openTab(event, 'Publications')">Publications</button>
+        <button class="tablinks" onclick="openTab(event, 'Contact')">Contact</button>
+    </div>
+
+
 
      </button>
         <div class="nav-links">
