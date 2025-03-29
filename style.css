@@ -25,6 +25,7 @@ h1 {
     .publication-list {
         text-align: justify;
         margin: 20px 0;
+         padding-left: 20px;
     }
     .publication-list li {
         margin-bottom: 15px;
