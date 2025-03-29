@@ -13,36 +13,35 @@ body {
     background-color: white; /* Sets background color to white */
     color: #333; /* Dark text color for readability */
     line-height: 1.6;
+    padding-top: 50px; /* Adjusts for fixed navbar height */
 }
 
 /* Navigation Bar Styling */
-
-* Navigation Bar Styling */
 .nav-tabs {
     display: flex;
-    flex-direction: column; /* Stacks the navigation items vertically */
-    justify-content: center; /* Vertically centers the navigation items */
-    align-items: center; /* Horizontally centers the navigation items */
+    justify-content: center; /* Centers items horizontally */
+    align-items: center; /* Centers items vertically */
     background-color: #f4f4f4;
     width: 100%;
     border-bottom: 2px solid #ddd;
-    height: 100vh; /* Ensures the nav bar takes full viewport height */
     position: fixed; /* Fixes the nav bar at the top of the page */
     top: 0;
     left: 0;
+    z-index: 1000; /* Ensures nav bar is above other content */
+    height: 50px; /* Fixed height for the navbar */
 }
 
+/* Navigation Links Styling */
 .nav-tabs a {
-    display: block; /* Makes each link a block-level element */
     color: #333;
     padding: 14px 20px;
     text-decoration: none;
     font-size: 1rem;
     text-align: center;
-    width: 100%; /* Ensures each link takes full width of the nav bar */
     transition: background-color 0.3s, color 0.3s;
 }
 
+/* Hover and Active States */
 .nav-tabs a:hover {
     background-color: #007bff;
     color: white;
@@ -53,7 +52,21 @@ body {
     color: white;
 }
 
+/* Hamburger Menu Icon */
+.navbar-toggler {
+    display: none;
+    background-color: #333;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
 
+.navbar-toggler div {
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    background-color: white;
+}
 
 /* Container Styling */
 .container {
@@ -118,25 +131,47 @@ a:hover {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .container {
-        padding: 15px;
-    }
-
-    h1 {
-        font-size: 2rem;
-    }
-
-    .profile-img {
-        width: 120px;
-        height: 120px;
-    }
-
     .nav-tabs {
-        flex-direction: column;
+        flex-direction: column; /* Stacks navigation items vertically */
+        height: auto; /* Adjusts height based on content */
     }
 
     .nav-tabs a {
-        padding: 10px;
+        width: 100%; /* Ensures each link takes full width of the nav bar */
+        padding: 14px;
         font-size: 1.2rem;
+        border-bottom: 1px solid #ddd; /* Adds separation between links */
+    }
+
+    .nav-tabs a:last-child {
+        border-bottom: none; /* Removes border from the last link */
+    }
+
+    .navbar-toggler {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 14px;
+        background-color: #333;
+        color: white;
+        font-size: 1.2rem;
+    }
+
+    .navbar-toggler div {
+        background-color: #fff;
+    }
+
+    .nav-links {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-tabs {
+        position: relative;
     }
 }
