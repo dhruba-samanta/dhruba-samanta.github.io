@@ -171,6 +171,19 @@ a:hover {
         display: flex;
     }
 
+    /* Style for DOI links */
+.publications a {
+    color: orange; /* Sets the link color to orange */
+    text-decoration: none; /* Removes underline */
+    font-weight: bold; /* Makes the link text bold */
+}
+
+.publications a:hover {
+    color: darkorange; /* Changes color on hover */
+    text-decoration: underline; /* Underlines the link on hover */
+}
+
+
     .nav-tabs {
         position: relative;
     }
