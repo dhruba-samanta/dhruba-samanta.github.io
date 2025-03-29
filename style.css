@@ -16,33 +16,39 @@ body {
 }
 
 /* Navigation Bar Styling */
+
+/* Navigation Bar Styling */
 .nav-tabs {
     display: flex;
-    justify-content: center;
-    background-color: #f4f4f4; /* Light background for the navigation bar */
+    flex-direction: column;
+    justify-content: center; /* Vertically centers the navigation items */
+    align-items: center; /* Horizontally centers the navigation items */
+    background-color: #f4f4f4;
     width: 100%;
-    border-bottom: 2px solid #ddd; /* Subtle border to define the navigation area */
+    border-bottom: 2px solid #ddd;
+    height: 100vh; /* Ensures the nav bar takes full viewport height */
 }
 
 .nav-tabs a {
-    color: #333; /* Dark text color */
+    color: #333;
     padding: 14px 20px;
     text-decoration: none;
     font-size: 1rem;
     text-align: center;
-    flex-grow: 1;
+    width: 100%; /* Ensures each link takes full width of the nav bar */
     transition: background-color 0.3s, color 0.3s;
 }
 
 .nav-tabs a:hover {
-    background-color: #007bff; /* Blue background on hover */
-    color: white; /* White text on hover */
+    background-color: #007bff;
+    color: white;
 }
 
 .nav-tabs a.active {
-    background-color: #28a745; /* Green background for active tab */
-    color: white; /* White text for active tab */
+    background-color: #28a745;
+    color: white;
 }
+
 
 /* Container Styling */
 .container {
