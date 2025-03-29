@@ -17,19 +17,23 @@ body {
 
 /* Navigation Bar Styling */
 
-/* Navigation Bar Styling */
+* Navigation Bar Styling */
 .nav-tabs {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Stacks the navigation items vertically */
     justify-content: center; /* Vertically centers the navigation items */
     align-items: center; /* Horizontally centers the navigation items */
     background-color: #f4f4f4;
     width: 100%;
     border-bottom: 2px solid #ddd;
     height: 100vh; /* Ensures the nav bar takes full viewport height */
+    position: fixed; /* Fixes the nav bar at the top of the page */
+    top: 0;
+    left: 0;
 }
 
 .nav-tabs a {
+    display: block; /* Makes each link a block-level element */
     color: #333;
     padding: 14px 20px;
     text-decoration: none;
@@ -48,6 +52,7 @@ body {
     background-color: #28a745;
     color: white;
 }
+
 
 
 /* Container Styling */
