@@ -10,8 +10,8 @@
 /* Body Styling */
 body {
     font-family: Arial, sans-serif;
-    background-color: black;
-    color: white; /* Sets text color to white for contrast */
+    background-color: white; /* Sets background color to white */
+    color: #333; /* Dark text color for readability */
     line-height: 1.6;
 }
 
@@ -19,27 +19,29 @@ body {
 .nav-tabs {
     display: flex;
     justify-content: center;
-    background-color: #333; /* Dark background for the navigation bar */
+    background-color: #f4f4f4; /* Light background for the navigation bar */
     width: 100%;
+    border-bottom: 2px solid #ddd; /* Subtle border to define the navigation area */
 }
 
 .nav-tabs a {
-    color: white;
+    color: #333; /* Dark text color */
     padding: 14px 20px;
     text-decoration: none;
     font-size: 1rem;
     text-align: center;
     flex-grow: 1;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .nav-tabs a:hover {
-    background-color: #ddd;
-    color: black;
+    background-color: #007bff; /* Blue background on hover */
+    color: white; /* White text on hover */
 }
 
 .nav-tabs a.active {
-    background-color: #04AA6D;
-    color: white;
+    background-color: #28a745; /* Green background for active tab */
+    color: white; /* White text for active tab */
 }
 
 /* Container Styling */
