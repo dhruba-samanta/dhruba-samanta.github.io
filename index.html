@@ -4,55 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dhrubajyoti Samanta</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        /* Add custom styles for the tabs */
-        .tabs {
-            display: flex;
-            cursor: pointer;
-            margin-bottom: 20px;
-        }
-
-        .tabs div {
-            padding: 10px 20px;
-            margin-right: 10px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            background-color: #f1f1f1;
-        }
-
-        .tabs div.active {
-            background-color: #007BFF;
-            color: white;
-        }
-
-        .tab-content {
-            display: none;
-        }
-
-        .tab-content.active {
-            display: block;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <img src="profile.jpg" alt="Dhruba Samanta" class="profile-pic">
-            <h1>Dhrubajyoti Samanta</h1>
-            <p>Climate Scientist</p>
-        </div>
-    </header>
+    <nav class="nav-tabs">
+        <button class="navbar-toggler" onclick="toggleMenu()">
 
-    <div class="tabs">
-        <div class="tab" data-tab="about">About Me</div>
-        <div class="tab" data-tab="publications">Publications</div>
-        <div class="tab" data-tab="presentations">Presentations</div>
-        <div class="tab" data-tab="education">Education</div>
-        <div class="tab" data-tab="memberships">Memberships</div>
-        <div class="tab" data-tab="teaching">Teaching</div>
-        <div class="tab" data-tab="others">Others</div>
-    </div>
+     </button>
+        <div class="nav-links">
+            <a href="#about" class="active">About Me</a>
+            <a href="#publications">Publications</a>
+            <a href="#presentations">Presentations</a>
+            <a href="#education">Education</a>
+            <a href="#memberships">Memberships</a>
+            <a href="#teaching">Teaching</a>
+            <a href="#others">Others</a>
+        </div>
+    </nav>
 
     <div id="about" class="tab-content container">
         <h2>About Me</h2>
@@ -260,6 +228,11 @@
         // Activate the first tab by default
         tabs[0].classList.add('active');
         tabContents[0].classList.add('active');
+
+   function toggleMenu() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        }
+        
     </script>
 </body>
 </html>
