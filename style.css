@@ -19,7 +19,7 @@
 }
 
 .site-header h1 {
-  margin: 0; /* Remove default margin */
+  margin: 10; /* Remove default margin */
   font-size: 2rem; /* Adjust font size as needed */
 }
 
