@@ -55,22 +55,6 @@
   color: white; /* White text for active tab */
 }
 
-/* Adjust Sections to avoid overlap with the fixed header and navbar */
-.section {
-  padding: 20px; /* Add padding to sections */
-  margin: 20px auto; /* Center the sections */
-  border: 1px solid #ddd; /* Light border for sections */
-  max-width: 900px; /* Limit the width of content */
-  background-color: #fff; /* White background for sections */
-  margin-top: 120px; /* Adjust this to accommodate the navbar height */
-}
-
-/* Center section headings */
-h2 {
-  margin-bottom: 20px; /* Add space below the heading */
-  text-align: center; /* Center align headings */
-}
-
 /* Tab Content - Hide all sections initially */
 .tab-content {
   display: none; /* Hidden by default */
