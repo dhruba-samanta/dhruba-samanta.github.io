@@ -10,7 +10,7 @@
   background-color: #000; /* Black background */
   color: #fff; /* White text color */
   text-align: center; /* Center the text horizontally */
-  padding: 20px 0; /* Add padding above and below the text */
+  padding: 40px 0; /* Add padding above and below the text */
   position: fixed; /* Fix the header at the top of the page */
   width: 100%; /* Full width */
   top: 0; /* Align to the top */
@@ -74,7 +74,7 @@
 /* Style for the publications list */
 ul {
   list-style-type: decimal; /* Numbered list */
-  margin-left: 30px; /* Indent the list from the left */
+  margin-left: 50px; /* Indent the list from the left */
   padding-left: 20px; /* Padding inside the list */
 }
 
