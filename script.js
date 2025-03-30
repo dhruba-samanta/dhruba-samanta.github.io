@@ -11,11 +11,11 @@ document.addEventListener("DOMContentLoaded", function () {
             const targetSection = document.getElementById(targetId);
 
             if (targetSection) {
-                // Hide all sections
-                tabContents.forEach(section => section.style.display = "none");
+                // Hide all sections by removing the 'active' class
+                tabContents.forEach(section => section.classList.remove("active"));
 
-                // Show the selected section
-                targetSection.style.display = "block";
+                // Show the selected section by adding the 'active' class
+                targetSection.classList.add("active");
 
                 // Remove 'active' class from all nav links
                 navLinks.forEach(link => link.classList.remove("active"));
@@ -27,6 +27,9 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // Ensure only the first section is visible on page load
-    tabContents.forEach(section => section.style.display = "none");
-    document.getElementById("home").style.display = "block";
+    tabContents.forEach(section => section.classList.remove("active"));
+    const firstSection = document.getElementById("home"); // Adjust this ID as needed
+    if (firstSection) {
+        firstSection.classList.add("active");
+    }
 });
