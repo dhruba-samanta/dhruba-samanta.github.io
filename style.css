@@ -25,70 +25,71 @@
 
 /* Horizontal Navbar Styling */
 .navbar {
-  background-color: #333;
-  display: flex;
-  justify-content: center;
-  padding: 10px 0;
-  position: fixed;
+  background-color: #333; /* Dark background for navbar */
+  display: flex; /* Flexbox to align navbar items */
+  justify-content: center; /* Center the navbar items */
+  padding: 10px 0; /* Padding for the navbar */
+  position: fixed; /* Fixed navbar below header */
   top: 80px; /* Push navbar below the header */
-  width: 100%;
-  z-index: 999;
+  width: 100%; /* Full width */
+  z-index: 999; /* Ensure navbar is above content */
 }
 
 .navbar a {
-  color: white;
-  padding: 14px 20px;
-  text-decoration: none;
-  text-align: center;
-  transition: background-color 0.3s, color 0.3s;
+  color: white; /* White text for navbar items */
+  padding: 14px 20px; /* Padding around navbar items */
+  text-decoration: none; /* Remove underline */
+  text-align: center; /* Center text in each navbar item */
+  transition: background-color 0.3s, color 0.3s; /* Smooth hover transition */
   border-radius: 25px; /* Rounded corners for each navigation tab */
   margin: 0 5px; /* Space between navigation items */
 }
 
 .navbar a:hover {
-  background-color: #ddd;
-  color: black;
+  background-color: #ddd; /* Light background on hover */
+  color: black; /* Dark text on hover */
 }
 
 .navbar a.active {
-  background-color: #28a745;
-  color: white;
+  background-color: #28a745; /* Green background for active tab */
+  color: white; /* White text for active tab */
 }
 
 /* Adjust Sections to avoid overlap with the fixed header and navbar */
 .section {
-  padding: 80px 20px; /* Add more padding at the top to prevent overlap */
-  margin: 20px auto;
-  border: 1px solid #ddd;
+  padding: 80px 20px; /* Ensure padding avoids overlap with fixed navbar */
+  margin: 20px auto; /* Center the sections */
+  border: 1px solid #ddd; /* Light border for sections */
   max-width: 900px; /* Limit the width of content */
-  background-color: #fff;
+  background-color: #fff; /* White background for sections */
 }
 
 /* Center section headings */
 h2 {
-  margin-bottom: 20px;
-  text-align: center;
+  margin-bottom: 20px; /* Add space below the heading */
+  text-align: center; /* Center align headings */
 }
 
 /* Tab Content - Hide all sections initially */
 .tab-content {
-    display: none;
-    opacity: 0;
-    transform: translateY(10px);
-    transition: opacity 0.3s ease, transform 0.3s ease;
+  visibility: hidden; /* Hidden by default for smooth transition */
+  opacity: 0; /* Start with invisible content */
+  transform: translateY(10px); /* Slight downward translation */
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s linear 0.3s; /* Smooth transition for opacity and position */
 }
 
 /* Show active section with smooth fade-in effect */
 .tab-content.active {
-    display: block;
-    opacity: 1;
-    transform: translateY(0);
+  visibility: visible; /* Show the section when active */
+  opacity: 1; /* Make the section fully visible */
+  transform: translateY(0); /* Reset translation */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition */
 }
 
 /* Style for the publications list */
 ul {
-  list-style-type: decimal; /* Ensure list is numbered */
-  margin-left: 30px; /* Add margin to left for indentation */
+  list-style-type: decimal; /* Numbered list */
+  margin-left: 30px; /* Indent the list from the left */
   padding-left: 20px; /* Padding inside the list */
 }
 
@@ -97,7 +98,7 @@ li {
 }
 
 li strong {
-  font-weight: bold;
+  font-weight: bold; /* Make list item titles bold */
 }
 
 /* Provide margin for text content */
@@ -107,15 +108,15 @@ li strong {
 
 /* Responsive Design Adjustments */
 @media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        align-items: center;
-    }
+  .navbar {
+    flex-direction: column; /* Stack navbar items vertically */
+    align-items: center; /* Center the items vertically */
+  }
 
-    .navbar a {
-        display: block;
-        width: 80%;
-        text-align: center;
-        margin: 5px 0;
-    }
+  .navbar a {
+    display: block; /* Make each navbar item a block element */
+    width: 80%; /* Ensure each navbar item takes up 80% of the screen width */
+    text-align: center; /* Center the text */
+    margin: 5px 0; /* Add space between navbar items */
+  }
 }
