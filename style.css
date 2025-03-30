@@ -55,6 +55,8 @@
   color: white;
 }
 
+
+
 /* Adjust Sections to avoid overlap with the fixed header and navbar */
 .section {
   padding: 80px 20px; /* Add more padding at the top to prevent overlap */
