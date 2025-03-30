@@ -57,11 +57,12 @@
 
 /* Adjust Sections to avoid overlap with the fixed header and navbar */
 .section {
-  padding: 80px 20px; /* Ensure padding avoids overlap with fixed navbar */
+  padding: 20px; /* Add padding to sections */
   margin: 20px auto; /* Center the sections */
   border: 1px solid #ddd; /* Light border for sections */
   max-width: 900px; /* Limit the width of content */
   background-color: #fff; /* White background for sections */
+  margin-top: 120px; /* Adjust this to accommodate the navbar height */
 }
 
 /* Center section headings */
@@ -72,15 +73,15 @@ h2 {
 
 /* Tab Content - Hide all sections initially */
 .tab-content {
-  visibility: hidden; /* Hidden by default for smooth transition */
+  display: none; /* Hidden by default */
   opacity: 0; /* Start with invisible content */
   transform: translateY(10px); /* Slight downward translation */
-  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s linear 0.3s; /* Smooth transition for opacity and position */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition for opacity and position */
 }
 
 /* Show active section with smooth fade-in effect */
 .tab-content.active {
-  visibility: visible; /* Show the section when active */
+  display: block; /* Show the section when active */
   opacity: 1; /* Make the section fully visible */
   transform: translateY(0); /* Reset translation */
   transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition */
@@ -118,5 +119,9 @@ li strong {
     width: 80%; /* Ensure each navbar item takes up 80% of the screen width */
     text-align: center; /* Center the text */
     margin: 5px 0; /* Add space between navbar items */
+  }
+
+  .section {
+    padding: 15px; /* Less padding on smaller screens */
   }
 }
