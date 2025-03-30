@@ -1,33 +1,29 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Get all the tabs
     const tabs = document.querySelectorAll('.navbar a');
     const tabContents = document.querySelectorAll('.tab-content');
 
-    // Activate the first tab and content by default
-    if (tabs.length > 0 && tabContents.length > 0) {
-        tabs[0].classList.add('active');
-        tabContents[0].classList.add('active');
-    }
+    // Ensure only the first tab content is visible initially
+    tabContents.forEach(content => content.style.display = 'none');
+    if (tabContents.length > 0) tabContents[0].style.display = 'block';
 
-    tabs.forEach(function(tab) {
-        tab.addEventListener('click', function(e) {
+    tabs.forEach(tab => {
+        tab.addEventListener('click', function (e) {
             e.preventDefault();
 
-            // Remove active class from all tabs and content
-            tabs.forEach(function(t) {
-                t.classList.remove('active');
-            });
-            tabContents.forEach(function(content) {
-                content.classList.remove('active');
-            });
+            // Hide all tab contents
+            tabContents.forEach(content => content.style.display = 'none');
 
-            // Add active class to the clicked tab
-            tab.classList.add('active');
+            // Remove active class from all tabs
+            tabs.forEach(t => t.classList.remove('active'));
 
-            // Show the corresponding content
-            const targetContent = document.querySelector(tab.getAttribute('href'));
+            // Add active class to clicked tab
+            this.classList.add('active');
+
+            // Get target content and show it
+            const targetId = this.getAttribute('href');
+            const targetContent = document.querySelector(targetId);
             if (targetContent) {
-                targetContent.classList.add('active');
+                targetContent.style.display = 'block';
             }
         });
     });
