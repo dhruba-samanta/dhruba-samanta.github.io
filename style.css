@@ -29,7 +29,7 @@
     height: 100vh; /* Ensures the nav bar takes full viewport height */
     position: fixed; /* Fixes the nav bar at the top of the page */
     left: 0;
-    top: 60px; /* Adjust this based on the header height */
+    top: 90px; /* Adjust this based on the header height */
 }
 
 .nav-tabs a {
