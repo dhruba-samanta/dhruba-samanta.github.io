@@ -41,6 +41,8 @@
   text-decoration: none;
   text-align: center;
   transition: background-color 0.3s, color 0.3s;
+  border-radius: 25px; /* Rounded corners for each navigation tab */
+  margin: 0 5px; /* Space between navigation items */
 }
 
 .navbar a:hover {
@@ -55,47 +57,31 @@
 
 /* Adjust Sections to avoid overlap with the fixed header and navbar */
 .section {
-  padding: 100px 20px; /* Add more padding at the top to prevent overlap */
-  margin: 20px 0;
+  padding: 80px 20px; /* Add more padding at the top to prevent overlap */
+  margin: 20px auto;
   border: 1px solid #ddd;
-}
-
-
-
-.navbar a {
-  color: white;
-  padding: 14px 20px;
-  text-decoration: none;
-  text-align: center;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-.navbar a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.navbar a.active {
-  background-color: #28a745;
-  color: white;
-}
-
-/* Style for the sections */
-.section {
-  padding: 60px 20px;
-  margin: 20px 0;
-  border: 1px solid #ddd;
+  max-width: 900px; /* Limit the width of content */
+  background-color: #fff;
 }
 
 h2 {
   margin-bottom: 20px;
+  text-align: center; /* Center the section headings */
 }
 
+/* Hide non-active content sections */
+.tab-content {
+  display: none;
+}
 
-/* Style the publications list */
+.tab-content.active {
+  display: block;
+}
+
+/* Style for the publications list */
 ul {
   list-style-type: decimal; /* Ensure list is numbered */
-  margin-left: 20px; /* Add margin to left for indentation */
+  margin-left: 30px; /* Add margin to left for indentation */
   padding-left: 20px; /* Padding inside the list */
 }
 
@@ -107,3 +93,7 @@ li strong {
   font-weight: bold;
 }
 
+/* Provide margin for text content */
+.container, .tab-content, .section {
+  margin: 0 15px; /* Add margin to prevent text from being too left-aligned */
+}
