@@ -72,12 +72,12 @@ h2 {
 }
 
 /* Hide non-active content sections */
-.tab-content {
-  display: none;
-}
 
+.tab-content {
+    display: none;
+}
 .tab-content.active {
-  display: block;
+    display: block;
 }
 
 /* Style for the publications list */
