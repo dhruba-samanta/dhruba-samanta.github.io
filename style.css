@@ -28,8 +28,8 @@
     border-bottom: 2px solid #ddd;
     height: 100vh; /* Ensures the nav bar takes full viewport height */
     position: fixed; /* Fixes the nav bar at the top of the page */
-    top: 0;
     left: 0;
+    top: 60px; /* Adjust this based on the header height */
 }
 
 .nav-tabs a {
