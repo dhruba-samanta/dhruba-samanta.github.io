@@ -1,30 +1,32 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const tabs = document.querySelectorAll('.navbar a');
-    const tabContents = document.querySelectorAll('.tab-content');
+    const navLinks = document.querySelectorAll(".nav-link");
+    const tabContents = document.querySelectorAll(".tab-content");
 
-    // Ensure only the first tab content is visible initially
-    tabContents.forEach(content => content.style.display = 'none');
-    if (tabContents.length > 0) tabContents[0].style.display = 'block';
+    navLinks.forEach(link => {
+        link.addEventListener("click", function (event) {
+            event.preventDefault(); // Prevent default anchor behavior
 
-    tabs.forEach(tab => {
-        tab.addEventListener('click', function (e) {
-            e.preventDefault();
+            // Get the target section ID from the href attribute
+            const targetId = this.getAttribute("href").substring(1);
+            const targetSection = document.getElementById(targetId);
 
-            // Hide all tab contents
-            tabContents.forEach(content => content.style.display = 'none');
+            if (targetSection) {
+                // Hide all sections
+                tabContents.forEach(section => section.style.display = "none");
 
-            // Remove active class from all tabs
-            tabs.forEach(t => t.classList.remove('active'));
+                // Show the selected section
+                targetSection.style.display = "block";
 
-            // Add active class to clicked tab
-            this.classList.add('active');
+                // Remove 'active' class from all nav links
+                navLinks.forEach(link => link.classList.remove("active"));
 
-            // Get target content and show it
-            const targetId = this.getAttribute('href');
-            const targetContent = document.querySelector(targetId);
-            if (targetContent) {
-                targetContent.style.display = 'block';
+                // Add 'active' class to the clicked nav link
+                this.classList.add("active");
             }
         });
     });
+
+    // Ensure only the first section is visible on page load
+    tabContents.forEach(section => section.style.display = "none");
+    document.getElementById("home").style.display = "block";
 });
