@@ -90,3 +90,20 @@
 h2 {
   margin-bottom: 20px;
 }
+
+
+/* Style the publications list */
+ul {
+  list-style-type: decimal; /* Ensure list is numbered */
+  margin-left: 20px; /* Add margin to left for indentation */
+  padding-left: 20px; /* Padding inside the list */
+}
+
+li {
+  margin-bottom: 15px; /* Add space between list items */
+}
+
+li strong {
+  font-weight: bold;
+}
+
