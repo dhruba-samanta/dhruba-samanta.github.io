@@ -55,8 +55,6 @@
   color: white;
 }
 
-
-
 /* Adjust Sections to avoid overlap with the fixed header and navbar */
 .section {
   padding: 80px 20px; /* Add more padding at the top to prevent overlap */
@@ -66,18 +64,25 @@
   background-color: #fff;
 }
 
+/* Center section headings */
 h2 {
   margin-bottom: 20px;
-  text-align: center; /* Center the section headings */
+  text-align: center;
 }
 
-/* Hide non-active content sections */
-
+/* Tab Content - Hide all sections initially */
 .tab-content {
     display: none;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
 }
+
+/* Show active section with smooth fade-in effect */
 .tab-content.active {
     display: block;
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /* Style for the publications list */
@@ -98,4 +103,19 @@ li strong {
 /* Provide margin for text content */
 .container, .tab-content, .section {
   margin: 0 15px; /* Add margin to prevent text from being too left-aligned */
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar a {
+        display: block;
+        width: 80%;
+        text-align: center;
+        margin: 5px 0;
+    }
 }
