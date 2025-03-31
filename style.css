@@ -23,7 +23,7 @@
   font-size: 2rem;
 }
 
-/* Navbar Styling */
+/* Horizontal Navbar Styling */
 .navbar {
   background-color: #333;
   display: flex;
@@ -55,7 +55,7 @@
   color: white;
 }
 
-/* Tab Content - Initially hidden */
+/* Tab Content */
 .tab-content {
   display: none;
   opacity: 0;
@@ -65,24 +65,25 @@
   margin-top: 60px;
 }
 
-/* Show active section with smooth transition */
+/* Show active section */
 .tab-content.active {
   display: block;
   opacity: 1;
   transform: translateY(0);
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-/* Ensure "About Me" section is only visible on home and About tabs */
+/* Hide About Me by default in all tabs */
 .about-me {
   display: none;
 }
 
-#about.active .about-me, 
-#home.active .about-me {
-  display: block !important;
+/* Show About Me only on the About tab */
+#about-tab-content .about-me {
+  display: block;
 }
 
-/* Style for ordered lists */
+/* Style for the publications list */
 ul {
   list-style-type: decimal;
   margin-left: 50px;
@@ -95,11 +96,6 @@ li {
 
 li strong {
   font-weight: bold;
-}
-
-/* Prevent text from being too left-aligned */
-.container, .tab-content, .section {
-  margin: 0 15px;
 }
 
 /* Responsive Design Adjustments */
