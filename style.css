@@ -51,7 +51,7 @@
 }
 
 .navbar a.active {
-  background-color: #28a745; /* Green background for active tab */
+  background-color: #add8e6; /* Green background for active tab */
   color: white; /* White text for active tab */
 }
 
