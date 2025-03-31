@@ -110,6 +110,14 @@ li strong {
     margin: 5px 0; /* Add space between navbar items */
   }
 
+  #about-page .about-me {
+    display: block;
+}
+
+#publications-page .about-me {
+    display: none;
+}
+
   .section {
     padding: 15px; /* Less padding on smaller screens */
   }
