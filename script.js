@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     const navLinks = document.querySelectorAll(".nav-link");
     const tabContents = document.querySelectorAll(".tab-content");
-    const aboutMeSection = document.querySelector(".about-me");
 
     // Function to hide all sections and remove active classes
     function hideAllSections() {
@@ -14,15 +13,6 @@ document.addEventListener("DOMContentLoaded", function () {
         const targetSection = document.getElementById(targetId);
         if (targetSection) {
             targetSection.classList.add("active");
-        }
-    }
-
-    // Function to update visibility of "About Me" section
-    function updateAboutMeVisibility(targetId) {
-        if (targetId === "about") { // Ensure the ID matches the "About Me" tab
-            aboutMeSection.style.display = "block"; // Show "About Me"
-        } else {
-            aboutMeSection.style.display = "none"; // Hide "About Me" on other tabs
         }
     }
 
@@ -40,9 +30,6 @@ document.addEventListener("DOMContentLoaded", function () {
             // Show the selected section and add active class to the clicked link
             showSection(targetId);
             this.classList.add("active");
-
-            // Update visibility of "About Me" section
-            updateAboutMeVisibility(targetId);
         });
     });
 
@@ -50,7 +37,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const defaultTabId = "about"; // Set the homepage default tab (ensure this matches your ID)
     hideAllSections();
     showSection(defaultTabId);
-    updateAboutMeVisibility(defaultTabId);
 
     // Highlight the default tab in the navigation
     const defaultTabLink = document.querySelector(`.nav-link[href="#${defaultTabId}"]`);
