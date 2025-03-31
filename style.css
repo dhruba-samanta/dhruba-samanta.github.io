@@ -7,131 +7,116 @@
 
 /* Site Header Styling */
 .site-header {
-  background-color: #000; /* Black background */
-  color: #fff; /* White text color */
-  text-align: center; /* Center the text horizontally */
-  padding: 15px 0; /* Reduced padding for a smaller header */
-  position: fixed; /* Fix the header at the top of the page */
-  width: 100%; /* Full width */
-  top: 0; /* Align to the top */
-  left: 0; /* Align to the left */
-  z-index: 10000; /* Ensure it's above other content */
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10000;
 }
 
 .site-header h1 {
-  margin: 0; /* Remove default margin */
-  font-size: 2rem; /* Adjust font size as needed */
+  margin: 0;
+  font-size: 2rem;
 }
 
-/* Horizontal Navbar Styling */
+/* Navbar Styling */
 .navbar {
-  background-color: #333; /* Dark background for navbar */
-  display: flex; /* Flexbox to align navbar items */
-  justify-content: center; /* Center the navbar items */
-  padding: 10px 0; /* Padding for the navbar */
-  position: fixed; /* Fixed navbar below header */
-  top: 60px; /* Increase the top value to move navbar further down */
-  width: 100%; /* Full width */
-  z-index: 9999; /* Slightly lower than header to prevent overlap */
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  position: fixed;
+  top: 60px;
+  width: 100%;
+  z-index: 9999;
 }
 
 .navbar a {
-  color: white; /* White text for navbar items */
-  padding: 14px 20px; /* Padding around navbar items */
-  text-decoration: none; /* Remove underline */
-  text-align: center; /* Center text in each navbar item */
-  transition: background-color 0.3s, color 0.3s; /* Smooth hover transition */
-  border-radius: 25px; /* Rounded corners for each navigation tab */
-  margin: 0 5px; /* Space between navigation items */
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 25px;
+  margin: 0 5px;
 }
 
 .navbar a:hover {
-  background-color: #ddd; /* Light background on hover */
-  color: black; /* Dark text on hover */
+  background-color: #ddd;
+  color: black;
 }
 
 .navbar a.active {
-  background-color: #1E90FF; /* Green background for active tab */
-  color: white; /* White text for active tab */
+  background-color: #1E90FF;
+  color: white;
 }
 
-/* Tab Content - Hide all sections initially */
+/* Tab Content - Initially hidden */
 .tab-content {
-  display: none; /* Hidden by default */
-  opacity: 0; /* Start with invisible content */
-  transform: translateY(10px); /* Slight downward translation */
-  transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition for opacity and position */
-  padding-top: 120px; /* Increased this value to move content further down */
-  margin-top: 60px; /* Optional: Adds more spacing if needed */
+  display: none;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  padding-top: 120px;
+  margin-top: 60px;
 }
 
-/* Show active section with smooth fade-in effect */
+/* Show active section with smooth transition */
 .tab-content.active {
-  display: block; /* Show the section when active */
-  opacity: 1; /* Make the section fully visible */
-  transform: translateY(0); /* Reset translation */
-  transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition */
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
 }
 
-/* Specific rules for when the "About Me" section should be visible */
-#about-tab-content {
-  display: block; /* Show "About Me" by default */
+/* Ensure "About Me" section is only visible on home and About tabs */
+.about-me {
+  display: none;
 }
 
-/* Style for the publications list */
+#about.active .about-me, 
+#home.active .about-me {
+  display: block !important;
+}
+
+/* Style for ordered lists */
 ul {
-  list-style-type: decimal; /* Numbered list */
-  margin-left: 50px; /* Indent the list from the left */
-  padding-left: 20px; /* Padding inside the list */
+  list-style-type: decimal;
+  margin-left: 50px;
+  padding-left: 20px;
 }
 
 li {
-  margin-bottom: 15px; /* Add space between list items */
+  margin-bottom: 15px;
 }
 
 li strong {
-  font-weight: bold; /* Make list item titles bold */
+  font-weight: bold;
 }
 
-/* Provide margin for text content */
+/* Prevent text from being too left-aligned */
 .container, .tab-content, .section {
-  margin: 0 15px; /* Add margin to prevent text from being too left-aligned */
+  margin: 0 15px;
 }
 
 /* Responsive Design Adjustments */
 @media (max-width: 768px) {
   .navbar {
-    flex-direction: column; /* Stack navbar items vertically */
-    align-items: center; /* Center the items vertically */
+    flex-direction: column;
+    align-items: center;
   }
 
   .navbar a {
-    display: block; /* Make each navbar item a block element */
-    width: 80%; /* Ensure each navbar item takes up 80% of the screen width */
-    text-align: center; /* Center the text */
-    margin: 5px 0; /* Add space between navbar items */
+    display: block;
+    width: 80%;
+    text-align: center;
+    margin: 5px 0;
   }
 
-
-/* Ensure About Me is shown only when it's active */
-#about-tab-content {
-    display: block;
-}
-
-/* Hide About Me when other sections are shown */
-.tab-content:not(#about-tab-content) .about-me {
-    display: none;
-}
-
-  #about-page .about-me {
-    display: block;
-}
-
-#publications-page .about-me {
-    display: none;
-}
-
   .section {
-    padding: 15px; /* Less padding on smaller screens */
+    padding: 15px;
   }
 }
