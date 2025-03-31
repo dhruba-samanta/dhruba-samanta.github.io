@@ -64,8 +64,7 @@
   opacity: 0;
   transform: translateY(10px);
   transition: opacity 0.3s ease, transform 0.3s ease;
-  padding-top: 120px;
-  margin-top: 60px;
+  margin-top: 160px;
 }
 
 /* Show active section */
@@ -76,20 +75,17 @@
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
+/* About Me visibility control */
 .about-me {
-    margin-top: 250px; /* Adjust the value based on the height of your fixed header */
+    display: none; /* Hide by default */
+    margin-top: 250px; /* Adjust based on the height of your fixed header */
 }
 
-
-/* Hide About Me by default in all tabs */
-.about-me {
-  display: none;
+/* Show About Me only when the About tab is active */
+#about.active .about-me {
+    display: block;
 }
 
-/* Show About Me only on the About tab */
-#about-tab-content .about-me {
-  display: block;
-}
 
 /* Style for the publications list */
 ul {
