@@ -55,6 +55,13 @@
   color: white;
 }
 
+/* Active tab styling */
+.navbar a.active {
+  background-color: #1E90FF; /* Blue color for active tab */
+  color: white; /* White text for active tab */
+}
+
+
 /* Tab Content */
 .tab-content {
   display: none;
