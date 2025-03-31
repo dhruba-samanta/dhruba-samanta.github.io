@@ -75,16 +75,17 @@
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-/* About Me visibility control */
+/* Hide About Me by default */
 .about-me {
-    display: none; /* Hide by default */
-    margin-top: 250px; /* Adjust based on the height of your fixed header */
+    display: none; /* Initially hidden */
+    margin-top: 250px; /* Adjusted margin based on the fixed header */
 }
 
-/* Show About Me only when the About tab is active */
+/* Show About Me when the About tab is active */
 #about.active .about-me {
     display: block;
 }
+
 
 
 /* Style for the publications list */
