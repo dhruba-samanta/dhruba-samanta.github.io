@@ -10,7 +10,7 @@
   background-color: #000; /* Black background */
   color: #fff; /* White text color */
   text-align: center; /* Center the text horizontally */
-  padding: 15px 0; /* Add padding above and below the text */
+  padding: 15px 0; /* Reduced padding for a smaller header */
   position: fixed; /* Fix the header at the top of the page */
   width: 100%; /* Full width */
   top: 0; /* Align to the top */
@@ -69,6 +69,11 @@
   opacity: 1; /* Make the section fully visible */
   transform: translateY(0); /* Reset translation */
   transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+/* Specific rules for when the "About Me" section should be visible */
+#about-tab-content {
+  display: block; /* Show "About Me" by default */
 }
 
 /* Style for the publications list */
