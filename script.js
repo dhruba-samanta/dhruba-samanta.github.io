@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     const navLinks = document.querySelectorAll(".nav-link");
     const tabContents = document.querySelectorAll(".tab-content");
+    const aboutMeSection = document.querySelector(".about-me");
 
     // Function to hide all sections and remove active classes
     function hideAllSections() {
@@ -30,6 +31,13 @@ document.addEventListener("DOMContentLoaded", function () {
             // Show the selected section and add active class to the clicked link
             showSection(targetId);
             this.classList.add("active");
+
+            // Show About Me only when the About tab is clicked
+            if (targetId === "about-tab-content") {
+                aboutMeSection.style.display = "block";
+            } else {
+                aboutMeSection.style.display = "none";
+            }
         });
     });
 
@@ -37,9 +45,16 @@ document.addEventListener("DOMContentLoaded", function () {
     if (navLinks.length > 0) {
         const firstLink = navLinks[0]; // Assuming the first nav link corresponds to the first section
         const firstSectionId = firstLink.getAttribute("href").substring(1);
-        
+
         hideAllSections(); // Ensure all sections are hidden
         showSection(firstSectionId); // Show the first section
         firstLink.classList.add("active"); // Highlight the first nav link
+
+        // Ensure About Me is visible only if it's the first section
+        if (firstSectionId === "about-tab-content") {
+            aboutMeSection.style.display = "block";
+        } else {
+            aboutMeSection.style.display = "none";
+        }
     }
 });
