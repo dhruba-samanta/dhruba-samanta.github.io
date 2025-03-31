@@ -73,6 +73,11 @@
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
+.about-me {
+    margin-top: 80px; /* Adjust the value based on the height of your fixed header */
+}
+
+
 /* Hide About Me by default in all tabs */
 .about-me {
   display: none;
