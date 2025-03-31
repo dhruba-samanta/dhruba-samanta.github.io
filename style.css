@@ -50,10 +50,6 @@
   color: black;
 }
 
-.navbar a.active {
-  background-color: #1E90FF;
-  color: white;
-}
 
 /* Active tab styling */
 .navbar a.active {
