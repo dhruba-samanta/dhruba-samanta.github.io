@@ -17,6 +17,15 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
+    // Function to update visibility of "About Me" section
+    function updateAboutMeVisibility(targetId) {
+        if (targetId === "about") { // Ensure the ID matches the "About Me" tab
+            aboutMeSection.style.display = "block"; // Show "About Me"
+        } else {
+            aboutMeSection.style.display = "none"; // Hide "About Me" on other tabs
+        }
+    }
+
     // Set up click event listeners for each navigation link
     navLinks.forEach(link => {
         link.addEventListener("click", function (event) {
@@ -32,29 +41,20 @@ document.addEventListener("DOMContentLoaded", function () {
             showSection(targetId);
             this.classList.add("active");
 
-            // Show About Me only when the About tab is clicked
-            if (targetId === "about-tab-content") {
-                aboutMeSection.style.display = "block";
-            } else {
-                aboutMeSection.style.display = "none";
-            }
+            // Update visibility of "About Me" section
+            updateAboutMeVisibility(targetId);
         });
     });
 
-    // Initialize the first tab as active on page load
-    if (navLinks.length > 0) {
-        const firstLink = navLinks[0]; // Assuming the first nav link corresponds to the first section
-        const firstSectionId = firstLink.getAttribute("href").substring(1);
+    // Initialize the correct first tab on page load
+    const defaultTabId = "about"; // Set the homepage default tab (ensure this matches your ID)
+    hideAllSections();
+    showSection(defaultTabId);
+    updateAboutMeVisibility(defaultTabId);
 
-        hideAllSections(); // Ensure all sections are hidden
-        showSection(firstSectionId); // Show the first section
-        firstLink.classList.add("active"); // Highlight the first nav link
-
-        // Ensure About Me is visible only if it's the first section
-        if (firstSectionId === "about-tab-content") {
-            aboutMeSection.style.display = "block";
-        } else {
-            aboutMeSection.style.display = "none";
-        }
+    // Highlight the default tab in the navigation
+    const defaultTabLink = document.querySelector(`.nav-link[href="#${defaultTabId}"]`);
+    if (defaultTabLink) {
+        defaultTabLink.classList.add("active");
     }
 });
