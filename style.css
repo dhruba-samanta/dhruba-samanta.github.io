@@ -30,9 +30,9 @@
   justify-content: center; /* Center the navbar items */
   padding: 10px 0; /* Padding for the navbar */
   position: fixed; /* Fixed navbar below header */
-  top: 80px; /* Push navbar below the header */
+  top: 120px; /* Increase the top value to move navbar further down */
   width: 100%; /* Full width */
-  z-index: 999; /* Ensure navbar is above content */
+  z-index: 9999; /* Slightly lower than header to prevent overlap */
 }
 
 .navbar a {
