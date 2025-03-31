@@ -112,6 +112,17 @@ li strong {
     margin: 5px 0; /* Add space between navbar items */
   }
 
+
+/* Ensure About Me is shown only when it's active */
+#about-tab-content {
+    display: block;
+}
+
+/* Hide About Me when other sections are shown */
+.tab-content:not(#about-tab-content) .about-me {
+    display: none;
+}
+
   #about-page .about-me {
     display: block;
 }
