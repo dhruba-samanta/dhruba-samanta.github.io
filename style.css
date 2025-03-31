@@ -61,7 +61,8 @@
   opacity: 0; /* Start with invisible content */
   transform: translateY(10px); /* Slight downward translation */
   transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition for opacity and position */
-  padding-top: 80px; /* Adjust this value based on the height of your navigation bar */
+  padding-top: 100px; /* Increased this value to move content further down */
+  margin-top: 60px; /* Optional: Adds more spacing if needed */
 }
 
 /* Show active section with smooth fade-in effect */
