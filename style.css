@@ -151,12 +151,13 @@ li strong {
   margin-bottom: 20px;
 }
 
+
 /* Styling for the Copyright Information */
-#about .copyright-info {
-  text-align: center;           /* Centers the copyright text */
-  font-size: 14px;              /* Sets a smaller font size */
-  color: #555;                  /* Sets a neutral color for the text */
-  margin-top: 10px;             /* Adds space above the copyright text */
+.copyright-info {
+  display: block;             /* Ensures it behaves as a block element */
+  width: 100%;                /* Takes full width */
+  text-align: center;         /* Centers the text */
+  font-size: 14px;            /* Sets a smaller font size */
+  color: #555;                /* Neutral text color */
+  margin-top: 10px;           /* Adds space above */
 }
-
-
