@@ -103,12 +103,26 @@ li strong {
   font-weight: bold;
 }
 
-/* Responsive Design Adjustments */
+/* Styling for the About Me Image */
+#about .about-image {
+  display: block;             /* Ensures the image behaves as a block element */
+  max-width: 100%;            /* Makes sure the image doesn't overflow the container */
+  height: auto;               /* Keeps the aspect ratio intact */
+  margin-top: 20px;           /* Adds some space above the image */
+  margin-bottom: 20px;        /* Adds some space below the image */
+  border-radius: 8px;         /* Optional: adds rounded corners for a softer look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds subtle shadow around the image */
+}
+
+/* Responsive Adjustments for Small Screens */
 @media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    align-items: center;
+  #about .about-image {
+    max-width: 90%;           /* Adjusts image width on smaller screens */
+    margin: 20px auto;        /* Centers the image and adds vertical spacing */
   }
+}
+
+
 
   .navbar a {
     display: block;
