@@ -122,7 +122,10 @@ li strong {
   }
 }
 
-
+  #about .copyright-info {
+    font-size: 12px;           /* Adjusts font size for smaller screens */
+    margin-top: 15px;          /* Adds more space on top */
+  }
 
   .navbar a {
     display: block;
