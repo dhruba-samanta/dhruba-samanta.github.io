@@ -143,10 +143,12 @@ li strong {
 }
 
 /* FULL-WIDTH Bottom Profile Image - RESTORED */
-#about .bottom-profile-image {
+.bottom-profile-image {
   display: block;
-  width: 100%; /* Ensure full-width */
+  width: 100%; /* Ensures full-width */
   height: auto;
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
+
