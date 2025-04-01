@@ -161,3 +161,10 @@ li strong {
   margin-top: 10px;           /* Adds space above */
   padding: 10px 0;            /* Adds vertical padding for better positioning */
 }
+
+#about .about-image-box img {
+  width: 100%;
+  height: auto;
+  display: block; /* Ensures image is rendered correctly */
+  visibility: visible;
+}
