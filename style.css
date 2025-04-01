@@ -63,6 +63,10 @@
   transform: translateY(10px);
   transition: opacity 0.3s ease, transform 0.3s ease;
   margin-top: 160px;
+  padding: 20px;              /* Adds padding inside the content area */
+  margin-left: 20px;          /* Adds space on the left side */
+  margin-right: 20px;         /* Adds space on the right side */
+  box-sizing: border-box;     /* Ensures padding and margin are accounted for in the total width */
 }
 
 /* Show active section */
@@ -72,6 +76,7 @@
   transform: translateY(0);
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
+
 
 /* Hide About Me by default */
 .about-me {
