@@ -142,62 +142,11 @@ li strong {
   border-radius: 8px;
 }
 
-/* FULL-WIDTH Bottom Profile Image */
-#about .about-profile-image {
+/* FULL-WIDTH Bottom Profile Image - RESTORED */
+#about .bottom-profile-image {
   display: block;
   width: 100%; /* Ensure full-width */
   height: auto;
   margin-top: 20px;
   margin-bottom: 20px;
-  border-radius: 0; /* No border radius */
-  box-shadow: none; /* Remove box shadow */
-}
-
-/* Styling for the Copyright Information */
-#about .copyright-info {
-  display: flex;
-  justify-content: center;
-  font-size: 14px;
-  color: #555;
-  margin-top: 10px;
-  margin-bottom: 20px;
-}
-
-/* Responsive Adjustments for Small Screens */
-@media (max-width: 768px) {
-  #about .about-container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  
-  #about .about-text {
-    max-width: 100%;
-  }
-  
-  #about .about-image-box {
-    width: 80%;
-    margin-top: 20px;
-  }
-  
-  #about .about-profile-image {
-    width: 100%; /* Ensure it remains full-width on smaller screens */
-    margin: 20px auto;
-  }
-
-  #about .copyright-info {
-    font-size: 12px;
-    margin-top: 15px;
-  }
-
-  .navbar a {
-    display: block;
-    width: 80%;
-    text-align: center;
-    margin: 5px 0;
-  }
-
-  .section {
-    padding: 15px;
-  }
 }
