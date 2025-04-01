@@ -50,13 +50,11 @@
   color: black;
 }
 
-
 /* Active tab styling */
 .navbar a.active {
   background-color: #1E90FF; /* Blue color for active tab */
   color: white; /* White text for active tab */
 }
-
 
 /* Tab Content */
 .tab-content {
@@ -77,16 +75,14 @@
 
 /* Hide About Me by default */
 .about-me {
-    display: none; /* Initially hidden */
-    margin-top: 250px; /* Adjusted margin based on the fixed header */
+  display: none; /* Initially hidden */
+  margin-top: 250px; /* Adjusted margin based on the fixed header */
 }
 
 /* Show About Me when the About tab is active */
 #about.active .about-me {
-    display: block;
+  display: block;
 }
-
-
 
 /* Style for the publications list */
 ul {
@@ -114,13 +110,21 @@ li strong {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds subtle shadow around the image */
 }
 
+/* Styling for the Copyright Information */
+#about .copyright-info {
+  text-align: center;           /* Centers the copyright text */
+  font-size: 14px;              /* Sets a smaller font size */
+  color: #555;                  /* Sets a neutral color for the text */
+  margin-top: 10px;             /* Adds space above the copyright text */
+  margin-bottom: 20px;          /* Optional: adds some space below the copyright text */
+}
+
 /* Responsive Adjustments for Small Screens */
 @media (max-width: 768px) {
   #about .about-image {
-    max-width: 90%;           /* Adjusts image width on smaller screens */
-    margin: 20px auto;        /* Centers the image and adds vertical spacing */
+    max-width: 90%;            /* Adjusts image width on smaller screens */
+    margin: 20px auto;         /* Centers the image and adds vertical spacing */
   }
-}
 
   #about .copyright-info {
     font-size: 12px;           /* Adjusts font size for smaller screens */
