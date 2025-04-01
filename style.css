@@ -52,8 +52,8 @@
 
 /* Active tab styling */
 .navbar a.active {
-  background-color: #1E90FF; /* Blue color for active tab */
-  color: white; /* White text for active tab */
+  background-color: #1E90FF;
+  color: white;
 }
 
 /* Tab Content */
@@ -63,10 +63,10 @@
   transform: translateY(10px);
   transition: opacity 0.3s ease, transform 0.3s ease;
   margin-top: 160px;
-  padding: 20px;              /* Adds padding inside the content area */
-  margin-left: 20px;          /* Adds space on the left side */
-  margin-right: 20px;         /* Adds space on the right side */
-  box-sizing: border-box;     /* Ensures padding and margin are accounted for in the total width */
+  padding: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  box-sizing: border-box;
 }
 
 /* Show active section */
@@ -77,11 +77,10 @@
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-
 /* Hide About Me by default */
 .about-me {
-  display: none; /* Initially hidden */
-  margin-top: 250px; /* Adjusted margin based on the fixed header */
+  display: none;
+  margin-top: 250px;
 }
 
 /* Show About Me when the About tab is active */
@@ -89,7 +88,7 @@
   display: block;
 }
 
-/* Style for the publications list */
+/* Publications List Styling */
 ul {
   list-style-type: decimal;
   margin-left: 50px;
@@ -104,38 +103,76 @@ li strong {
   font-weight: bold;
 }
 
-/* Styling for the About Me Image */
-#about .about-image {
-  display: block;             /* Ensures the image behaves as a block element */
-  max-width: 100%;            /* Makes sure the image doesn't overflow the container */
-  height: auto;               /* Keeps the aspect ratio intact */
-  margin-top: 20px;           /* Adds some space above the image */
-  margin-bottom: 20px;        /* Adds some space below the image */
-  border-radius: 8px;         /* Optional: adds rounded corners for a softer look */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds subtle shadow around the image */
+/* About Me Section - Container for Text and Image */
+#about .about-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 250px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* Text Section */
+#about .about-text {
+  flex: 1;
+  margin-right: 20px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Profile Image Box */
+#about .about-image-box {
+  width: 250px;
+  height: auto;
+  box-sizing: border-box;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Image inside the profile image box */
+#about .about-image-box img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
 
 /* Styling for the Copyright Information */
 #about .copyright-info {
-  /* text-align: center;           /* Centers the copyright text */
-  display: flex;               /* Use Flexbox for centering */
-  justify-content: center;     /* Center the content horizontally */
-  font-size: 14px;              /* Sets a smaller font size */
-  color: #555;                  /* Sets a neutral color for the text */
-  margin-top: 10px;             /* Adds space above the copyright text */
-  margin-bottom: 20px;          /* Optional: adds some space below the copyright text */
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  color: #555;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 /* Responsive Adjustments for Small Screens */
 @media (max-width: 768px) {
+  #about .about-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #about .about-text {
+    margin-right: 0;
+  }
+  
+  #about .about-image-box {
+    width: 80%;
+    margin-top: 20px;
+  }
+  
   #about .about-image {
-    max-width: 90%;            /* Adjusts image width on smaller screens */
-    margin: 20px auto;         /* Centers the image and adds vertical spacing */
+    max-width: 90%;
+    margin: 20px auto;
   }
 
   #about .copyright-info {
-    font-size: 12px;           /* Adjusts font size for smaller screens */
-    margin-top: 15px;          /* Adds more space on top */
+    font-size: 12px;
+    margin-top: 15px;
   }
 
   .navbar a {
@@ -149,3 +186,4 @@ li strong {
     padding: 15px;
   }
 }
+
