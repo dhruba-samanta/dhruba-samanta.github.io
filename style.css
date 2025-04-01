@@ -108,31 +108,28 @@ li strong {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-top: 50px;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 80%;
+  margin-top: 250px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 /* Text Section */
 #about .about-text {
   flex: 1;
-  max-width: 50%; /* Restrict text width to half of the page */
+  margin-right: 20px;
   font-size: 1rem;
   line-height: 1.6;
 }
 
-/* Right-Side Profile Image Box */
+/* Profile Image Box */
 #about .about-image-box {
   width: 250px;
   height: auto;
-  padding: 10px;
+  box-sizing: border-box;
+  padding: 20px;
   background-color: #f4f4f4;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 /* Image inside the profile image box */
@@ -140,17 +137,6 @@ li strong {
   width: 100%;
   height: auto;
   border-radius: 8px;
-}
-
-/* Bottom Profile Image (Existing Image) */
-#about .about-profile-image {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Styling for the Copyright Information */
@@ -168,11 +154,10 @@ li strong {
   #about .about-container {
     flex-direction: column;
     align-items: center;
-    text-align: center;
   }
   
   #about .about-text {
-    max-width: 100%;
+    margin-right: 0;
   }
   
   #about .about-image-box {
@@ -180,7 +165,7 @@ li strong {
     margin-top: 20px;
   }
   
-  #about .about-profile-image {
+  #about .about-image {
     max-width: 90%;
     margin: 20px auto;
   }
