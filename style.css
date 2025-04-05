@@ -124,23 +124,28 @@ li strong {
 
 /* Right-Side Profile Image Box */
 #about .about-image-box {
-  width: 250px;
-  height: auto;
-  padding: 10px;
-  background-color: #f4f4f4;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;  /* Increased the width of the box */
+  height: 400px; /* Increased the height of the box */
+  padding: 15px; /* Adjusted padding for better spacing */
+  background-color: #f4f4f4; /* Light background */
+  border-radius: 12px; /* Increased border radius for a more rounded corner */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow for better contrast */
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: center; /* Align image vertically */
+  justify-content: center; /* Align image horizontally */
+  margin: 0 auto; /* Center the box horizontally if needed */
 }
 
 /* Image inside the profile image box */
 #about .about-image-box img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
+  width: 90%; /* Image width adjusted to make it larger while keeping it responsive */
+  height: 90%; /* Image height adjusted to fit the box */
+  border-radius: 10px; /* Rounded corners for the image */
+  object-fit: cover; /* Ensure the image covers the available space without distortion */
+  display: block; /* Ensures image is rendered correctly */
 }
+
+
 
 /* FULL-WIDTH Bottom Profile Image - RESTORED */
 .bottom-profile-image {
@@ -162,12 +167,7 @@ li strong {
   padding: 10px 0;            /* Adds vertical padding for better positioning */
 }
 
-#about .about-image-box img {
-  width: 100%;
-  height: auto;
-  display: block; /* Ensures image is rendered correctly */
-  visibility: visible;
-}
+
 
 body {
   font-size: 17px; /* or increase from 16px to 17px or 18px */
