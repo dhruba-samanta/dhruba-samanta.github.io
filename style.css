@@ -140,7 +140,7 @@ li strong {
 #about .about-image-box img {
   width: 90%; /* Image width adjusted to make it larger while keeping it responsive */
   height: 90%; /* Image height adjusted to fit the box */
-  border-radius: 10px; /* Rounded corners for the image */
+  border-radius: 20px; /* Rounded corners for the image */
   object-fit: cover; /* Ensure the image covers the available space without distortion */
   display: block; /* Ensures image is rendered correctly */
 }
