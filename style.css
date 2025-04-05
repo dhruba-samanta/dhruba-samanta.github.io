@@ -163,7 +163,7 @@ li strong {
 }
 
 #about .about-image-box img {
-  width: 150%;
+  width: 130%;
   height: auto;
   display: block; /* Ensures image is rendered correctly */
   visibility: visible;
