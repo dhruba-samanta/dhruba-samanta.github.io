@@ -80,7 +80,7 @@
 /* Hide About Me by default */
 .about-me {
   display: none;
-  margin-top: 250px;
+  margin-top: 200px;
 }
 
 /* Show About Me when the About tab is active */
@@ -170,7 +170,7 @@ li strong {
 
 
 body {
-  font-size: 17px; /* or increase from 16px to 17px or 18px */
+  font-size: 20px; /* or increase from 16px to 17px or 18px */
 }
 html {
   scroll-behavior: smooth;
