@@ -168,3 +168,8 @@ li strong {
   display: block; /* Ensures image is rendered correctly */
   visibility: visible;
 }
+
+body {
+  font-size: 17px; /* or increase from 16px to 17px or 18px */
+}
+
