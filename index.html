@@ -286,7 +286,20 @@
     <!--    <p>Details about other activities go here.</p>
    <!-- </div> -->
 
-    <li><a href="outreach.html">Outreach</a></li>
+
+    <!-- Placeholder where outreach.html content will go -->
+<section id="outreach"></section>
+
+<script>
+    // Load and inject the outreach section
+    fetch("outreach.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("outreach").innerHTML = data;
+        })
+        .catch(error => console.error("Failed to load outreach section:", error));
+</script>
+
       
     <div id="others" class="tab-content container">
         <h2>Others</h2>
