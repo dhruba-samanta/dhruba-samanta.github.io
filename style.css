@@ -172,7 +172,7 @@ li strong {
 
 
 body {
-  font-size: 20px; /* or increase from 16px to 17px or 18px */
+  font-size: 18px; /* or increase from 16px to 17px or 18px */
 }
 html {
   scroll-behavior: smooth;
