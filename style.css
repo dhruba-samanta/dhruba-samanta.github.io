@@ -77,44 +77,17 @@
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-/* Hide About Me by default */
-.about-me {
-  display: none;
-  margin-top: 200px;
-}
-
-/* Show About Me when the About tab is active */
-#about.active .about-me {
-  display: block;
-}
-
-/* Publications List Styling */
-ul {
-  list-style-type: decimal;
-  margin-left: 50px;
-  padding-left: 20px;
-}
-
-li {
-  margin-bottom: 15px;
-}
-
-li strong {
-  font-weight: bold;
-}
-
 /* About Me Section - Container for Text and Image */
 #about .about-container {
   display: flex;
-  flex-direction: row;        /* Ensure horizontal layout */
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: flex-start;
-  gap: 30px;                  /* Space between text and image */
+  gap: 30px;
   margin-top: 40px;
+  max-width: 80%;
   margin-left: auto;
   margin-right: auto;
-  max-width: 80%;
-  flex-wrap: wrap;            /* Allow wrapping on smaller screens */
+  flex-wrap: wrap; /* Allows content to wrap on small screens */
 }
 
 /* Text Section */
@@ -126,8 +99,8 @@ li strong {
 
 /* Right-Side Profile Image Box */
 #about .about-image-box {
-  width: 300px;               /* Fixed width */
-  height: 300px;              /* Fixed height to make it square */
+  width: 300px;
+  height: 300px;
   padding: 10px;
   background-color: #f4f4f4;
   border-radius: 12px;
@@ -135,7 +108,7 @@ li strong {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-shrink: 0;             /* Prevent shrinking on small screens */
+  flex-shrink: 0;
 }
 
 /* Image inside the profile image box */
@@ -147,28 +120,7 @@ li strong {
   display: block;
 }
 
-.about-image-box .image-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.about-image-box .caption {
-  margin-top: 10px;
-  text-align: center;
-}
-
-.about-image-box .caption .name {
-  font-weight: bold;
-  font-size: 1.1rem;
-}
-
-.about-image-box .caption .degree {
-  font-size: 1rem;
-  color: #666;
-}
-
-/* FULL-WIDTH Bottom Profile Image - RESTORED */
+/* Bottom Profile Image (Full Width) */
 .bottom-profile-image {
   display: block;
   width: 100%; /* Ensures full-width */
@@ -179,17 +131,17 @@ li strong {
 
 /* Styling for the Copyright Information */
 .copyright-info {
-  display: block;             /* Ensures it behaves as a block element */
-  width: 100%;                /* Takes full width */
-  text-align: center !important;  /* Forces center alignment */
-  font-size: 14px;            /* Sets a smaller font size */
-  color: #555;                /* Neutral text color */
-  margin-top: 10px;           /* Adds space above */
-  padding: 10px 0;            /* Adds vertical padding for better positioning */
+  display: block;
+  width: 100%;
+  text-align: center !important;
+  font-size: 14px;
+  color: #555;
+  margin-top: 10px;
+  padding: 10px 0;
 }
 
 body {
-  font-size: 18px; /* or increase from 16px to 17px or 18px */
+  font-size: 18px;
 }
 
 html {
