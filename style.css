@@ -50,7 +50,6 @@
   color: black;
 }
 
-/* Active tab styling */
 .navbar a.active {
   background-color: #1E90FF;
   color: white;
@@ -69,12 +68,10 @@
   box-sizing: border-box;
 }
 
-/* Show active section */
 .tab-content.active {
   display: block;
   opacity: 1;
   transform: translateY(0);
-  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 /* About Me Section - Container for Text and Image */
@@ -87,7 +84,7 @@
   max-width: 80%;
   margin-left: auto;
   margin-right: auto;
-  flex-wrap: wrap; /* Allows content to wrap on small screens */
+  flex-wrap: wrap; /* Enables wrapping on smaller screens */
 }
 
 /* Text Section */
@@ -97,7 +94,7 @@
   line-height: 1.6;
 }
 
-/* Right-Side Profile Image Box */
+/* Profile Image Box */
 #about .about-image-box {
   width: 300px;
   height: 300px;
@@ -109,6 +106,8 @@
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+  flex-direction: column;
+  text-align: center;
 }
 
 /* Image inside the profile image box */
@@ -120,16 +119,33 @@
   display: block;
 }
 
+/* Caption below the image */
+.about-image-box .caption {
+  margin-top: 30px; /* Push text further down from the image */
+  width: 100%;
+  text-align: center;
+}
+
+.about-image-box .caption .name {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.about-image-box .caption .degree {
+  font-size: 1rem;
+  color: #666;
+}
+
 /* Bottom Profile Image (Full Width) */
 .bottom-profile-image {
   display: block;
-  width: 100%; /* Ensures full-width */
+  width: 100%;
   height: auto;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
-/* Styling for the Copyright Information */
+/* Footer - Copyright */
 .copyright-info {
   display: block;
   width: 100%;
