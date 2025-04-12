@@ -146,6 +146,27 @@ li strong {
   display: block;
 }
 
+.about-image-box .image-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-image-box .caption {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.about-image-box .caption .name {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.about-image-box .caption .degree {
+  font-size: 1rem;
+  color: #666;
+}
+
 
 
 
