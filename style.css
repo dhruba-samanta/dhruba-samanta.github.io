@@ -107,13 +107,14 @@ li strong {
 #about .about-container {
   display: flex;
   flex-direction: row;        /* Ensure horizontal layout */
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-start;
   gap: 30px;                  /* Space between text and image */
   margin-top: 40px;
   margin-left: auto;
   margin-right: auto;
   max-width: 80%;
+  flex-wrap: wrap;            /* Allow wrapping on smaller screens */
 }
 
 /* Text Section */
@@ -167,9 +168,6 @@ li strong {
   color: #666;
 }
 
-
-
-
 /* FULL-WIDTH Bottom Profile Image - RESTORED */
 .bottom-profile-image {
   display: block;
@@ -190,12 +188,10 @@ li strong {
   padding: 10px 0;            /* Adds vertical padding for better positioning */
 }
 
-
-
 body {
   font-size: 18px; /* or increase from 16px to 17px or 18px */
 }
+
 html {
   scroll-behavior: smooth;
 }
-
