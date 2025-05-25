@@ -157,6 +157,13 @@
   transform: scale(1.05);
 }
 
+@media (max-width: 768px) {
+  .photo-gallery img {
+    width: 30%;
+    max-width: 100px;
+  }
+}
+
 
 /* Bottom Profile Image (Full Width) */
 .bottom-profile-image {
