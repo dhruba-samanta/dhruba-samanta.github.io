@@ -180,6 +180,11 @@
   clear: both; /* Add this to prevent float overlap */
 }
 
+.copyright-info {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 
 body {
   font-size: 18px;
