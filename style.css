@@ -193,8 +193,9 @@
 }
 
 #publications ol li {
-  margin-bottom: 15px; /* Increase or decrease as needed */
-  line-height: 1.6;    /* Optional: improves text readability */
+  margin-top: 20px;   /* Adds space before each numbered item */
+  margin-bottom: 0;   /* No extra space after the <li> */
+  line-height: 1.6;   /* Optional: improve readability */
 }
 
 
