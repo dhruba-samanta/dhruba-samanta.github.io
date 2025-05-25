@@ -198,6 +198,9 @@
   line-height: 1.6;   /* Optional: improve readability */
 }
 
+ul li {
+  margin-bottom: 10px; /* You can adjust the value */
+}
 
 
 body {
