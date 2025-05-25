@@ -136,18 +136,18 @@
   color: #666;
 }
 
-
 .photo-gallery {
   display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
+  flex-wrap: wrap;       /* Allows wrapping on small screens */
+  gap: 15px;              /* Space between images */
+  justify-content: center; /* Aligns images to the center */
   margin-bottom: 30px;
-  justify-content: center; /* or flex-start for left-align */
 }
 
 .photo-gallery img {
-  width: 200px; /* or use max-width: 100% for responsive */
+  width: 150px;           /* Resize to your liking */
   height: auto;
+  object-fit: cover;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
   transition: transform 0.3s ease;
@@ -156,6 +156,7 @@
 .photo-gallery img:hover {
   transform: scale(1.05);
 }
+
 
 /* Bottom Profile Image (Full Width) */
 .bottom-profile-image {
