@@ -145,7 +145,7 @@
 }
 
 .photo-gallery img {
-  width: 150px;           /* Resize to your liking */
+  width: 50px;           /* Resize to your liking */
   height: auto;
   object-fit: cover;
   border-radius: 8px;
