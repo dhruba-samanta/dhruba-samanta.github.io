@@ -145,8 +145,8 @@
 }
 
 .photo-gallery img {
-  width: 15%;
-  max-width: 120px;
+  width: 12%;
+  max-width: 96px;
   object-fit: cover;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
@@ -168,15 +168,18 @@
 }
 
 /* Footer - Copyright */
+
 .copyright-info {
   display: block;
   width: 100%;
-  text-align: center !important;
+  text-align: center;
   font-size: 14px;
   color: #555;
   margin-top: 10px;
   padding: 10px 0;
+  clear: both; /* Add this to prevent float overlap */
 }
+
 
 body {
   font-size: 18px;
