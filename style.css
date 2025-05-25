@@ -136,6 +136,27 @@
   color: #666;
 }
 
+
+.photo-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 30px;
+  justify-content: center; /* or flex-start for left-align */
+}
+
+.photo-gallery img {
+  width: 200px; /* or use max-width: 100% for responsive */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.photo-gallery img:hover {
+  transform: scale(1.05);
+}
+
 /* Bottom Profile Image (Full Width) */
 .bottom-profile-image {
   display: block;
