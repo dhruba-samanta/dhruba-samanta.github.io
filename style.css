@@ -192,6 +192,12 @@
   margin-right: auto;
 }
 
+#publications ol li {
+  margin-bottom: 15px; /* Increase or decrease as needed */
+  line-height: 1.6;    /* Optional: improves text readability */
+}
+
+
 
 body {
   font-size: 18px;
