@@ -145,8 +145,8 @@
 }
 
 .photo-gallery img {
-  width: 12%;
-  max-width: 96px;
+  width: 14%;
+  max-width: 112px;
   object-fit: cover;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
