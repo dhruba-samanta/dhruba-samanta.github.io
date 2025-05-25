@@ -139,14 +139,14 @@
 .photo-gallery {
   display: flex;
   flex-wrap: wrap;       /* Allows wrapping on small screens */
-  gap: 15px;              /* Space between images */
+  gap: 14px;              /* Space between images */
   justify-content: center; /* Aligns images to the center */
   margin-bottom: 30px;
 }
 
 .photo-gallery img {
-    width: 12%;
-  max-width: 110px;
+    width: 11.5%;
+  max-width: 115px;
   object-fit: cover;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
