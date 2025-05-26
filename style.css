@@ -96,8 +96,9 @@
 
 /* Profile Image Box */
 #about .about-image-box {
-  width: 300px;
-  height: 300px;
+  width: 320px;
+  height: auto;
+  min-width: 300px;
   padding: 10px;
   background-color: #f4f4f4;
   border-radius: 12px;
