@@ -201,6 +201,12 @@
   line-height: 1.6;   /* Optional: improve readability */
 }
 
+#presentations ol li {
+  margin-top: 20px;   /* Adds space before each numbered item */
+  margin-bottom: 0;   /* No extra space after the <li> */
+  line-height: 1.6;   /* Optional: improve readability */
+}
+
 .wordcloud-container {
   text-align: center;
   margin-top: 30px;
