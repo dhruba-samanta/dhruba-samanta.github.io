@@ -225,45 +225,54 @@
 .icon-grid {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;  /* centers the whole group horizontally */
-  gap: 12px;
-  max-width: 180px; /* fits 3 icons per row */
-  margin: 0 auto;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
 }
 
-.icon-grid a {
-  width: 50px;          /* fixed square container */
-  height: 50px;
+.icon-item a {
+  width: 64px;
+  height: 64px;
   display: flex;
-  align-items: center;  /* vertical centering */
-  justify-content: center; /* horizontal centering */
-  box-sizing: border-box;
-  background: transparent;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-decoration: none;
+  color: black;
 }
 
-.icon-grid img {
-  max-width: 36px;
-  max-height: 36px;
+.icon-item img {
+  max-width: 42px;
+  max-height: 42px;
   object-fit: contain;
-  display: block;
-  margin: 0 auto;
-  transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+  transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
-/* Special fix for ORCID: same square box but also center image inside container */
-.icon-grid a:first-child img {
-  max-width: 36px;
-  max-height: 36px;
-  object-fit: contain;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
+.icon-item span {
+  position: absolute;
+  top: 70px;
+  font-size: 14px;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  white-space: nowrap;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 2px 6px;
+  border-radius: 5px;
+  box-shadow: 0 0 3px rgba(0,0,0,0.2);
 }
 
-.icon-grid img:hover {
-  opacity: 0.8;
-  transform: scale(1.05);
+.icon-item:hover img {
+  transform: scale(1.1);
+  opacity: 0.9;
 }
+
+.icon-item:hover span {
+  opacity: 1;
+}
+
 
 
 ul li {
