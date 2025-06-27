@@ -232,8 +232,8 @@
 }
 
 .icon-grid a {
-  width: 50px;          /* fixed square container */
-  height: 50px;
+  width: 55px;          /* fixed square container */
+  height: 55px;
   display: flex;
   align-items: center;  /* vertical centering */
   justify-content: center; /* horizontal centering */
@@ -259,6 +259,18 @@
   margin-right: auto;
   display: block;
 }
+
+.icon-item span {
+  font-size: 0.9rem;      /* normal size */
+  transition: font-size 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+}
+
+.icon-item:hover span {
+  font-size: 1.3rem;      /* bigger on hover */
+  opacity: 1;
+}
+
 
 .icon-item:hover img {
   transform: scale(1.1);
