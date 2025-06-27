@@ -147,8 +147,8 @@
 }
 
 .photo-experience img {
-    width: 11.5%;
-  max-width: 115px;
+    width: 15%;
+  max-width: 150px;
   object-fit: cover;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
