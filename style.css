@@ -232,8 +232,8 @@
 }
 
 .icon-grid a {
-  width: 55px;          /* fixed square container */
-  height: 55px;
+  width: 52px;          /* fixed square container */
+  height: 52px;
   display: flex;
   align-items: center;  /* vertical centering */
   justify-content: center; /* horizontal centering */
