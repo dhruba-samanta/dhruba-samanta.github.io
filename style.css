@@ -219,23 +219,39 @@
 .icon-grid {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;  /* centers the whole group horizontally */
   gap: 12px;
-  max-width: 180px; /* or whatever fits 3 icons nicely */
+  max-width: 180px; /* fits 3 icons per row */
+  margin: 0 auto;
 }
 
 .icon-grid a {
-  width: 50px;
+  width: 50px;          /* fixed square container */
   height: 50px;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: center;  /* vertical centering */
+  justify-content: center; /* horizontal centering */
+  box-sizing: border-box;
+  background: transparent;
 }
 
 .icon-grid img {
-  width: 36px;
-  height: 36px;
+  max-width: 36px;
+  max-height: 36px;
   object-fit: contain;
+  display: block;
+  margin: 0 auto;
   transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+/* Special fix for ORCID: same square box but also center image inside container */
+.icon-grid a:first-child img {
+  max-width: 36px;
+  max-height: 36px;
+  object-fit: contain;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 .icon-grid img:hover {
