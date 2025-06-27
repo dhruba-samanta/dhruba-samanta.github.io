@@ -146,9 +146,13 @@
   margin-bottom: 30px;
 }
 
+
+
+.photo-crop-container img:hover {
+  transform: scale(1.05);
+}
 .photo-crop-container {
-  width: 115px;
-  height: 115px;
+  max-height: 115px;
   overflow: hidden;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
@@ -158,12 +162,8 @@
 .photo-crop-container img {
   height: 100%;
   width: auto;
-  object-fit: cover;
+  object-fit: contain; /* Use 'contain' instead of 'cover' */
   transition: transform 0.3s ease;
-}
-
-.photo-crop-container img:hover {
-  transform: scale(1.05);
 }
 
 
