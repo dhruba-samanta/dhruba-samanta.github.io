@@ -149,7 +149,7 @@
 .photo-experience img {
   height: auto;             /* Keeps natural height */
   width: auto;              /* Adjust width based on image */
-  max-height: 150px;        /* Set max height */
+  max-height: 130px;        /* Set max height */
   max-width: 100%;          /* Limits width to container */
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
