@@ -213,25 +213,27 @@
 }
 
 .caption p.degree {
-  margin-bottom: 20px;
+  margin-bottom: 0;
 }
 
 .social-icons {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
+  margin-top: 20px;
 }
 
 .icon-row {
   display: flex;
   justify-content: center;
-  gap: 15px;
+  gap: 16px;
 }
 
 .icon-row img {
-  width: 36px;
-  height: 36px;
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
   transition: all 0.2s ease-in-out;
 }
 
@@ -239,6 +241,7 @@
   opacity: 0.8;
   transform: scale(1.1);
 }
+
 
 
 ul li {
