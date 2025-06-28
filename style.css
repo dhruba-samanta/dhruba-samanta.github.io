@@ -156,7 +156,7 @@
 }
 
 .photo-crop-container {
-  aspect-ratio: 1.6 / 1; /* wider aspect ratio for rectangular shape */
+  aspect-ratio: 1.3 / 1; /* wider aspect ratio for rectangular shape */
   width: 140px;          /* increased width for wider images */
   overflow: hidden;
   border-radius: 8px;
