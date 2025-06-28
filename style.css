@@ -140,31 +140,35 @@
 
 .photo-experience {
   display: flex;
-  flex-wrap: wrap;       /* Allows wrapping on small screens */
-  gap: 14px;              /* Space between images */
-  justify-content: center; /* Aligns images to the center */
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
   margin-bottom: 30px;
 }
 
-
-
-.photo-crop-container img:hover {
-  transform: scale(1.05);
-}
 .photo-crop-container {
-  max-height: 115px;
+  width: 115px;
+  height: 115px;
   overflow: hidden;
-  border-radius: 8px;
+  border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
 }
 
 .photo-crop-container img {
   height: 100%;
   width: auto;
-  object-fit: contain; /* Use 'contain' instead of 'cover' */
+  object-fit: cover;
   transition: transform 0.3s ease;
 }
+
+.photo-crop-container img:hover {
+  transform: scale(1.05);
+}
+
 
 
 .photo-gallery {
