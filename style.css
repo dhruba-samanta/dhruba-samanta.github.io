@@ -74,6 +74,12 @@
   transform: translateY(0);
 }
 
+ul li {
+  margin-bottom: 10px;  /* Controls vertical space between bullet points */
+  line-height: 1.5em;   /* Optional: improves readability */
+}
+
+
 /* About Me Section - Container for Text and Image */
 #about .about-container {
   display: flex;
