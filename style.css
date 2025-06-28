@@ -152,6 +152,14 @@ ul li {
   margin-bottom: 30px;
 }
 
+.photo-service {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
 .photo-crop-container {
   width: 160px;
   height: 120px;
