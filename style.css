@@ -373,37 +373,41 @@ ul li {
   margin-left: 10px;
   line-height: 1.5;
 }
+
 .update-card {
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: #ffffff;
+  border: 2px solid #007BFF; /* blue border */
   border-radius: 20px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   padding: 20px;
-  margin: 30px auto; /* center horizontally with spacing */
+  margin: 30px auto;
   width: 90%;
-  max-width: 1100px; /* increased width */
+  max-width: 1100px;
   gap: 20px;
 }
 
-
 .update-text {
-  flex: 1;
+  flex: 2;
   font-size: 16px;
-  color: #333;
+  line-height: 1.5;
+  padding-right: 10px;
 }
 
 .update-image {
-  width: 150px;
-  flex-shrink: 0;
+  flex: 1.2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .update-image img {
   width: 100%;
-  height: auto;
+  max-height: 200px;
+  object-fit: contain;
   border-radius: 12px;
-  object-fit: cover;
 }
 
 /* Optional: Responsive fallback for mobile */
