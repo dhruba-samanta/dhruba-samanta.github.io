@@ -357,6 +357,22 @@ ul li {
   opacity: 0.9;
 }
 
+.service-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 1em;
+}
+
+.service-list li {
+  margin-bottom: 10px;
+}
+
+.service-list .subtext {
+  font-weight: normal;
+  margin-top: 4px;
+  margin-left: 10px;
+  line-height: 1.5;
+}
 
 
 ul li {
