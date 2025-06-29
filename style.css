@@ -373,7 +373,6 @@ ul li {
   margin-left: 10px;
   line-height: 1.5;
 }
-
 .update-card {
   display: flex;
   align-items: center;
@@ -382,11 +381,12 @@ ul li {
   border-radius: 20px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   padding: 20px;
-  margin: 20px 0;
-  max-width: 900px;
-  width: 100%;
+  margin: 30px auto; /* center horizontally with spacing */
+  width: 90%;
+  max-width: 1100px; /* increased width */
   gap: 20px;
 }
+
 
 .update-text {
   flex: 1;
