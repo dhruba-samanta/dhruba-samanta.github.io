@@ -282,14 +282,19 @@ ul li {
 }
 
 #publications a {
-  color: #003366;
-  text-decoration: underline;
-  text-decoration-color: #003366;
+  color: #003366 !important;        /* deep blue color */
+  text-decoration: underline !important;
+  cursor: pointer;
+}
+
+#publications a:visited {
+  color: #003366 !important;        /* same color, no change after click */
+  text-decoration: underline !important;
 }
 
 #publications a:hover {
-  color: #003366;
-  text-decoration-color: #003366;
+  color: #0059b3 !important;        /* slightly lighter blue on hover */
+  text-decoration: underline !important;
 }
 
 
