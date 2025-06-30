@@ -1,6 +1,6 @@
 /* Basic reset for margin and padding */
 * {
-  margin: 0.5;
+  margin: 0.5px;
   padding: 0;
   box-sizing: border-box;
 }
