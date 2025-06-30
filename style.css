@@ -281,6 +281,15 @@ ul li {
   line-height: 1.6;   /* Optional: improve readability */
 }
 
+.publications a:link,
+.publications a:visited,
+.publications a:hover,
+.publications a:active {
+  color: #003366;
+  text-decoration: underline;
+}
+
+
 #presentations ol li {
   margin-top: 20px;   /* Adds space before each numbered item */
   margin-bottom: 0;   /* No extra space after the <li> */
