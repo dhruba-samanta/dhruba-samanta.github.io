@@ -223,8 +223,6 @@ ul li {
 }
 
 
-
-
 .photo-gallery {
   display: flex;
   flex-wrap: wrap;       /* Allows wrapping on small screens */
@@ -243,6 +241,27 @@ ul li {
 }
 
 .photo-gallery img:hover {
+  transform: scale(1.05);
+}
+
+.photo-service2 {
+  display: flex;
+  flex-wrap: wrap;       /* Allows wrapping on small screens */
+  gap: 14px;              /* Space between images */
+  justify-content: center; /* Aligns images to the center */
+  margin-bottom: 30px;
+}
+
+.photo-service2 img {
+    width: 11.5%;
+  max-width: 115px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.photo-service2 img:hover {
   transform: scale(1.05);
 }
 
