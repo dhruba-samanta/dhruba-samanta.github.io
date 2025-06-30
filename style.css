@@ -281,12 +281,15 @@ ul li {
   line-height: 1.6;   /* Optional: improve readability */
 }
 
-.publications a:link,
-.publications a:visited,
-.publications a:hover,
-.publications a:active {
+#publications a {
   color: #003366;
   text-decoration: underline;
+  text-decoration-color: #003366;
+}
+
+#publications a:hover {
+  color: #003366;
+  text-decoration-color: #003366;
 }
 
 
