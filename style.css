@@ -216,6 +216,12 @@ ul li {
   transform: scale(1.05);
 }
 
+.service-list {
+  padding-left: 1.2em;  /* adjust this to match your normal ul spacing */
+  margin-left: 0;       /* removes extra indentation */
+  list-style-type: disc; /* ensures bullets match other sections */
+}
+
 
 
 
