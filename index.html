@@ -189,6 +189,20 @@
     });
 </script>
 
+<!-------------------------------- -->	 
+ <div id="research" class="tab-content container">
+  <div id="research-content"></div>
+</div>
+
+<script>
+  // Load research section from external file
+  fetch('content/research.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('research-content').innerHTML = data;
+    });
+</script>
+	
 <!-------------------------------- -->
  
   <div id="presentations" class="tab-content container">
@@ -233,235 +247,20 @@
 </script>
 
 <!-------------------------------- -->	 
-
  <div id="updates" class="tab-content container">
-     <h2>Recent Activities</h2>
-	 
-<!-- Update Card 1 -->
-<div class="update-card">
-  <div class="update-text">
-    <p><b><font color="#A0522D">Upcoming: SEP 2025</font></b></p>
-    <p><b>Pan-CLIVAR Meeting 2025 and CLIVAR Symposium Bridging Science and Society in Southeast Asia and Beyond</b></p>
-    <ul>
-      <li>Awarded Travel Grant</li>
-      <li>Scheduled to present and brainstorm as a CLIVAR Pacific Region Panel member</li>
-    </ul>
-  </div>
-  <div class="update-image">
-    <img src="image/panclivar2025.png" alt="panclivar2025">
-  </div>
+  <div id="updates-content"></div>
 </div>
 
-	 
-<!-- Update Card 2 -->
-<div class="update-card">
-  <div class="update-text">
-    <p><b><font color="#A0522D">Upcoming: JUL 2025</font></b></p>
-    <p><b>AOGS Annual Meeting 2025</b></p>
-    <ul>
-      <li>Convenor, OS01–Understanding Multiscale Sea-level Change Using Observations and Models: Global to Local</li>
-      <li>Co-convenor, OS18–Subseasonal to seasonal prediction and its applications</li>
-	<li>Invited Speaker, El Niño  drove anomalous ocean warming in Southeast Asia in 2023</li>    
-    </ul>
-  </div>
-  <div class="update-image">
-    <img src="image/aogs2025.png" alt="aogs2025">
-  </div>
-</div>
+<script>
+  // Load updates section from external file
+  fetch('content/updates.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('updates-content').innerHTML = data;
+    });
+</script>
 
-	 
-<!-- Update Card 3 -->
-<div class="update-card">
-  <div class="update-text">
-    <p><b><font color="#0056b3">JUN 2025</font></b></p>
-    <p><b>Blog writing on ocean warming in Southeast Asia in 2023</b></p>
-    <ul>
-      <li>Co-wrote a blog with Fangyi Tan summarizing our recent Scientific Reports paper on 2023 ocean warming in Southeast Asia</li>
-     </ul>
-  </div>
-  <div class="update-image">
-    <img src="image/blog2025.png" alt="blog2025">
-  </div>
-</div>
-
-<!-- Update Card 4 -->
-<div class="update-card">
-  <div class="update-text">
-    <p><b><font color="#0056b3">MAY 2025</font></b></p>
-    <p><b>Joined WCRP/CMIP Responsible Data Use Task Team</b></p>
-    <ul>
-      <li>A new WCRP RIfS task team promoting responsible use of CMIP climate data to reduce misuse in regional planning</li>
-	    <li>Aim to identify key limitations of CMIP outputs and guide appropriate use, especially in under-resourced regions</li>
-	    <li>Works with users and modeling centers to improve metadata, documentation, and communication of data fitness</li>
-	   </ul>
-  </div>
-  <div class="update-image">
-    <img src="image/responsibledata.png" alt="responsible">
-  </div>
-</div>
-	 
-<!-- Update Card 5 -->
-<div class="update-card">
-  <div class="update-text">
-    <p><b><font color="#0056b3">MAY 2025</font></b></p>
-    <p><b>Lead-authroed publication in Scientific Reports</b></p>
-    <ul>
-      <li>Co-lead a publication with Fangyi Tan (equal contribution) to demonstrate that El Niño was a key driver for 2023 ocean warming in Southeast Asia</li>
-     </ul>
-  </div>
-  <div class="update-image">
-    <img src="image/scirep2025.png" alt="scirep2025">
-  </div>
-</div>
-
-
-<!-- Update Card 6 -->
-<div class="update-card">
-  <div class="update-text">
-    <p><b><font color="#0056b3">APR 2025</font></b></p>
-    <p><b>EGU General Assembly 2025</b></p>
-    <ul>
-      <li>Presented on "Future sea level rise in Southeast Asia – new insights on uncertainty, ocean dynamics and extremes"</li>
-	</ul>
-  </div>
-  <div class="update-image">
-    <img src="image/egu2025.jpeg" alt="egu2025">
-  </div>
-</div>
-
-
-<!-- Update Card 7 -->
-<div class="update-card">
-  <div class="update-text">
-    <p><b><font color="#0056b3">FEB 2025</font></b></p>
-    <p><b>Published book chapter on Sea level change in Asia</b></p>
-    <ul>
-      <li>Published single-author book chapter reviewing the Sea level change and its impacts in Asia</li>
-	</ul>
-  </div>
-  <div class="update-image">
-    <img src="image/slrbook.png" alt="book">
-  </div>
-</div>
-
-	 <!-- Update Card 8 -->
-<div class="update-card">
-  <div class="update-text">
-    <p><b><font color="#0056b3">JAN 2025</font></b></p>
-    <p><b>Joined WCRP Global South Inclusion Task Team</b></p>
-    <ul>
-      <li>The Task Team has been created following the need to increase the inclusion of scientists from the Global South in the activities and panels of WCRP"</li>
-	<li>Our goal is to come up with a series of quality recommendations on how greater inclusion can be achieved"</li>    
-	</ul>
-  </div>
-  <div class="update-image">
-    <img src="image/globalsouth.png" alt="globalsouth">
-  </div>
-</div>
-	 
-	 
-<!-- Update Card 9 -->
-<div class="update-card">
-  <div class="update-text">
-    <p><b><font color="#0056b3">DEC 2024</font></b></p>
-    <p><b>AGU Fall Meeting 2024</b></p>
-    <ul>
-      <li>Convened session "Southeast Asia and the Indo-Pacific: Past, Present, and Future Climate and Environment"</li>
-	<li>Co-convened session "2014–2024: The Decade of Unusual ENSO Behaviour: Understanding Variability and Impacts"</li>
-	<li>Presented on "Impact Of Climate Model Resolution On Sterodynamic Sea-Level Projections Across Southeast Asia"</li>
-     </ul>
-  </div>
-  <div class="update-image">
-    <img src="image/agu2024.jpg" alt="agu2024">
-  </div>
-</div>
-
-
-
-
-
-	 
-</div>
-
-      
-    <div id="research" class="tab-content container">
-
-<h2>Recent Projects</h2>
-<ul>
-<li>	Assessing the long–term viability of nature–based climate solutions to future sea level rise and marine heatwaves in Singapore (<b>Role: Co-PI</b>)
-| Sponsor: National Parks Board, Singapore, 2024–2027, Fund: S$ 1,434.9 K </li>
-
-<li>	Evolving tropical cyclone tracks and associated rainfall patterns over Southeast Asia (<b>Role: Co-PI</b>)
-| Sponsor: Ministry of Education, Singapore, 2022–2023, Fund: S$ 99.9 K</li>
-	
-<li>	Climate Transformation Programme Singapore (<b>Role: Co-PI/ Local Collaborator/ Researcher</b>)
-| Sponsor: Ministry of Education, Singapore, 2023–2030, Fund: S$ 45,900.0 K</li>
-
-<li>	Project: Driving mechanisms of past and present sea level change to quantify projection uncertainties (<b>Role: Contributed in writing and submission, Collaborator</b>)
-| Sponsor: National Environment Agency, Singapore, 2021–2025, Fund: S$ 1,286.0 K</li>
-
-<li>	Project: Novel framework for probabilistic sea level projections for Singapore and surrounding regions (<b>Role: Contributed in writing and submission, Researcher</b>)
-| Sponsor: National Environment Agency, Singapore, 2021–2025, Fund: S$ 1,403.0 K</li>
-
-<li>	Project: Human genetic resilience in warming environments (<b>Role: Collaborator</b>) |
-Sponsor: Ministry of Education, Singapore, 2024–2025 </li>
-</ul>
-	
-<h2>Past Projects</h2>
-<ul>
-<li> Validating Pacific Centennial Oscillation: Integrating models and paleoclimatic records (Role: Researcher) </li>
-<li> Improving multi-scale variability and interactions of Indian summer monsoon in a global coupled seasonal climate forecast system through embedded regional modelling at weather and cloud-resolving scales (Role: Researcher) </li>
-<li> Development of an observational system to monitor nearshore wind, waves, and sediment transport (Role: Researcher) </li>
-<li> Featured-based study of Indian Ocean circulation using Saral AltiKa observations (Role: Researcher) </li>
-<li> Study of variability of air sea Interaction over tropical Indian Ocean region using observations from Meghatropiques (Role: Researcher) </li>
-</ul>	    
-
-<h2>Collaborations</h2>
-<p class="collab-description">
-  My collaborations span multiple continents, disciplines, and international scientific efforts, including CMIP7 Ocean and Sea Ice, Ocean Decade Vision 2030 (Group 5), and PAGES CoralHydro2K.
-</p>
-	    
-  <div class="photo-experience">
-  
-<div class="photo-crop-container">
-   <img src="image/ntu1.png" alt="photo 1">
-  </div>
-<div class="photo-crop-container">
-   <img src="image/eos1.png" alt="photo 1">
-  </div>
-  <div class="photo-crop-container">
-   <img src="image/ucb.png" alt="photo 1">
-  </div>
- <div class="photo-crop-container">
-   <img src="image/amnh.png" alt="photo 1">
-  </div>
- <div class="photo-crop-container">
-   <img src="image/aizu.png" alt="photo 1">
-  </div>
- <div class="photo-crop-container">
-   <img src="image/noc.png" alt="photo 1">
-  </div>
- <div class="photo-crop-container">
-   <img src="image/norce.png" alt="photo 1">
-  </div>
-<div class="photo-crop-container">
-    <img src="image/iitkgp1.png" alt="photo 1">
- </div> 
-  </div>
-	    
-
-  <h2>Top Co-Authors in Publications</h2>
- <ul>
-    <li>Nathalie F. Goodkin, American Museum of Natural History, USA (<em>13 papers</em>)</li>
-     <li>Benjamin P. Horton, City University of Hongkong, Hong Kong SAR (<em>9 papers</em>)</li>
-     <li>Kristopher B. Karnauskas, University of Colorado Boulder, USA (<em>7 papers</em>)</li>
-     <li>Mihir Kumar Dash, Indian Institute of Technology Kharagpur, India, (<em>5 papers</em>)</li>
-     <li>Prem Chand Pandey, Indian Instittue of Technology Gandhinagar, India (<em>4 papers</em>)</li>
-  </ul>
-
-  
-    </div>
-	    
+<!-------------------------------- -->	 
 
 <script src="script.js"></script>
 
