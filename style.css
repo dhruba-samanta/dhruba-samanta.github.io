@@ -449,6 +449,7 @@ ul li {
   justify-content: center;
   align-items: center;
   padding: 10px; /* ensures image doesn’t touch the edge */
+  background-color: #ffffff;
 }
 
 .update-image img {
@@ -456,7 +457,7 @@ ul li {
   max-width: 100%;
   height: auto;
   max-height: 180px;
-  object-fit: cover;
+  object-fit: contain; /* No cropping, image scaled to fit */
   border-radius: 12px;
 }
 
