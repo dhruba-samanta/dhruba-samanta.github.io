@@ -424,41 +424,42 @@ ul li {
 
 .update-card {
   display: flex;
-  align-items: stretch; /* make both sides equal height */
-  justify-content: space-between;
+  align-items: stretch; /* Equal height text and image */
   background-color: #ffffff;
-  border: 2px solid #08093D; /* blue border */
+  border: 2px solid #08093D;
   border-radius: 20px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  padding: 20px; /* increased padding for all sides */
+  padding: 0; /* remove padding from container */
   margin: 20px auto;
   width: 95%;
   max-width: 1200px;
-  gap: 20px;
+  overflow: hidden;
 }
 
 .update-text {
   flex: 2;
   font-size: 16px;
   line-height: 1.6;
-  padding-left: 20px;  /* More left padding */
-  padding-right: 10px;
+  padding: 20px 20px 20px 30px; /* top, right, bottom, LEFT padding */
 }
 
 .update-image {
-  flex: 1.5; /* reduce space taken by image to minimize right-side gap */
+  flex: 1.2;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 10px; /* ensures image doesn’t touch the edge */
 }
 
 .update-image img {
   width: 100%;
-  height: auto; /* Allow landscape scaling */
+  max-width: 100%;
+  height: auto;
   max-height: 180px;
-  object-fit: cover; /* Ensures better image fill while preserving aspect ratio */
+  object-fit: cover;
   border-radius: 12px;
 }
+
 
 
 /* Optional: Responsive fallback for mobile */
