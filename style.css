@@ -474,16 +474,16 @@ ul li {
   color: inherit;
 }
 
-#service a.outreach-link {
+a.outreach-link {
   text-decoration: underline;
   color: inherit;
 }
 
-#service a.outreach-link:hover {
+a.outreach-link:hover {
   color: #003366;
 }
 
-#service a.outreach-link:visited {
+a.outreach-link:visited {
   color: inherit;
 }
 
