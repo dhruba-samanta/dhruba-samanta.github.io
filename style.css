@@ -2,7 +2,7 @@
 
 /* Basic reset for margin and padding */
 * {
-  margin: 0.5px;
+  margin: 0.0px;
   padding: 0;
   box-sizing: border-box;
 }
