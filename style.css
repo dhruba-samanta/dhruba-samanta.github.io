@@ -179,36 +179,6 @@ ul li {
 
 
 
-.photo-outreach {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-  justify-content: center;
-  margin-bottom: 30px;
-}
-.photo-crop2-container {
-  width: 160px;
-  height: 120px;
-  overflow: hidden;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #fff; /* for transparent edges if needed */
-}
-
-.photo-crop2-container img {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
-  transition: transform 0.3s ease;
-}
-
-.photo-crop2-container img:hover {
-  transform: scale(1.05);
-
-
   .photo-service {
   display: flex;
   flex-wrap: wrap;
