@@ -461,6 +461,18 @@ ul li {
   border-radius: 12px;
 }
 
+#service a.service-link {
+  text-decoration: underline;
+  color: inherit;
+}
+
+#service a.service-link:hover {
+  color: #0056b3;
+}
+
+#service a.service-link:visited {
+  color: inherit;
+}
 
 
 /* Optional: Responsive fallback for mobile */
