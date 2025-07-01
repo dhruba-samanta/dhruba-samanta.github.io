@@ -430,10 +430,10 @@ ul li {
   border: 2px solid #08093D; /* blue border */
   border-radius: 20px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  padding: 20px;
-  margin: 30px auto;
-  width: 90%;
-  max-width: 1100px;
+  padding: 10px;
+  margin: 20px auto;
+  width: 95%;
+  max-width: 1200px;
   gap: 20px;
 }
 
