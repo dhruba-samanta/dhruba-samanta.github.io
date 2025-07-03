@@ -525,9 +525,20 @@ a.outreach-link:visited {
   transform: scale(1.05);
 }
 
+/* Tablet and below */
+@media (max-width: 768px) {
+  .photo-gallery img {
+    width: 30%;
+    max-width: 100px;
+  }
+}
 
-/* Optional: Responsive fallback for mobile */
+/* Mobile-specific adjustments */
 @media (max-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+
   .update-card {
     flex-direction: column;
     text-align: center;
@@ -536,6 +547,11 @@ a.outreach-link:visited {
   .update-image {
     width: 100%;
     margin-top: 15px;
+  }
+
+  .update-text, .about-text {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
