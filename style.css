@@ -491,6 +491,58 @@ body {
   font-size: 18px;
 }
 
+@media (max-width: 768px) {
+  .nav-link {
+    display: block;
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .tab-content {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  body, html {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .container {
+    width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+
+  h1, h2, h3 {
+    font-size: 1.5em;
+  }
+
+  .icon-grid {
+    max-width: 100%;
+    gap: 10px;
+  }
+
+  .icon-grid a {
+    width: 48px;
+    height: 48px;
+  }
+
+  .update-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .update-image img {
+    height: auto !important;
+    max-height: 160px;
+  }
+}
+
+
+
 html {
   scroll-behavior: smooth;
 }
