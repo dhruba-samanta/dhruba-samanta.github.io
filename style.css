@@ -2,7 +2,7 @@
 
 /* Basic reset for margin and padding */
 * {
-  margin: 0.0px;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
@@ -57,6 +57,16 @@
   color: white;
 }
 
+/* Fix horizontal overflow & set base font */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+  overflow-x: hidden;
+  font-size: 18px;
+}
+
 /* Tab Content */
 .tab-content {
   display: none;
@@ -76,11 +86,61 @@
   transform: translateY(0);
 }
 
+/* Lists */
 ul li {
   margin-bottom: 10px;  /* Controls vertical space between bullet points */
-  line-height: 1.5em;   /* Optional: improves readability */
+  line-height: 1.5em;   /* Improves readability */
 }
 
+/* Responsive fixes for mobile and tablet */
+@media (max-width: 768px) {
+  .tab-content {
+    margin-top: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 15px;
+  }
+
+  .update-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .update-image {
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .update-text,
+  .about-text {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .photo-gallery img {
+    width: 30%;
+    max-width: 100px;
+    height: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+
+  .tab-content {
+    margin-top: 80px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+  }
+
+  .photo-gallery img {
+    width: 100%;
+    max-width: 100px;
+  }
+}
 
 /* About Me Section - Container for Text and Image */
 #about .about-container {
@@ -146,6 +206,7 @@ ul li {
   color: #666;
 }
 
+/* Photo experience */
 .photo-experience {
   display: flex;
   flex-wrap: wrap;
@@ -154,48 +215,8 @@ ul li {
   margin-bottom: 30px;
 }
 
-.photo-crop-container {
-  width: 160px;
-  height: 120px;
-  overflow: hidden;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #fff; /* for transparent edges if needed */
-}
-
-.photo-crop-container img {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
-  transition: transform 0.3s ease;
-}
-
-.photo-crop-container img:hover {
-  transform: scale(1.05);
-}
-
-
-
-  .photo-service {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-  justify-content: center;
-  margin-bottom: 30px;
-}
-
-.photo-service {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px; /* space between photos */
-  justify-content: center;
-  margin-bottom: 2rem;
-}
-
-
+/* Photo crop container and hover effects */
+.photo-crop-container,
 .photo-crop1-container {
   width: 160px;
   height: 120px;
@@ -208,6 +229,7 @@ ul li {
   background-color: #fff; /* for transparent edges if needed */
 }
 
+.photo-crop-container img,
 .photo-crop1-container img {
   max-width: 100%;
   max-height: 100%;
@@ -215,20 +237,20 @@ ul li {
   transition: transform 0.3s ease;
 }
 
+.photo-crop-container img:hover,
 .photo-crop1-container img:hover {
   transform: scale(1.05);
 }
 
-
-
-
-
-.service-list {
-  padding-left: 0.5em;  /* adjust this to match your normal ul spacing */
-  margin-left: 0;       /* removes extra indentation */
-  list-style-type: disc; /* ensures bullets match other sections */
+/* Photo service sections */
+.photo-service,
+.photo-service2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px; /* space between photos */
+  justify-content: center;
+  margin-bottom: 30px;
 }
-
 
 .photo-gallery {
   display: flex;
@@ -239,7 +261,7 @@ ul li {
 }
 
 .photo-gallery img {
-    width: 11.5%;
+  width: 11.5%;
   max-width: 115px;
   object-fit: cover;
   border-radius: 8px;
@@ -263,26 +285,9 @@ ul li {
   padding: 4px;                 /* Optional: keeps spacing around images */
 }
 
-
-.photo-service2 {
-  display: flex;
-  flex-wrap: wrap;       /* Allows wrapping on small screens */
-  gap: 14px;              /* Space between images */
-  justify-content: center; /* Aligns images to the center */
-  margin-bottom: 30px;
-}
-
 .photo-service2 img:hover {
   transform: scale(1.05);
 }
-
-@media (max-width: 768px) {
-  .photo-gallery img {
-    width: 30%;
-    max-width: 100px;
-  }
-}
-
 
 /* Bottom Profile Image (Full Width) */
 .bottom-profile-image {
@@ -294,7 +299,6 @@ ul li {
 }
 
 /* Footer - Copyright */
-
 .copyright-info {
   display: block;
   width: 100%;
@@ -303,18 +307,16 @@ ul li {
   color: #555;
   margin-top: 10px;
   padding: 10px 0;
-  clear: both; /* Add this to prevent float overlap */
-}
-
-.copyright-info {
+  clear: both; /* Prevent float overlap */
   margin-left: auto;
   margin-right: auto;
 }
 
+/* Publications */
 #publications ol li {
   margin-top: 20px;   /* Adds space before each numbered item */
   margin-bottom: 0;   /* No extra space after the <li> */
-  line-height: 1.6;   /* Optional: improve readability */
+  line-height: 1.6;   /* Improves readability */
 }
 
 #publications a {
@@ -324,7 +326,7 @@ ul li {
 }
 
 #publications a:visited {
-  color: #003366 !important;        /* same color, no change after click */
+  color: #003366 !important;
   text-decoration: underline !important;
 }
 
@@ -333,13 +335,14 @@ ul li {
   text-decoration: underline !important;
 }
 
-
+/* Presentations */
 #presentations ol li {
-  margin-top: 20px;   /* Adds space before each numbered item */
-  margin-bottom: 0;   /* No extra space after the <li> */
-  line-height: 1.6;   /* Optional: improve readability */
+  margin-top: 20px;
+  margin-bottom: 0;
+  line-height: 1.6;
 }
 
+/* Wordcloud */
 .wordcloud-container {
   text-align: center;
   margin-top: 30px;
@@ -351,14 +354,16 @@ ul li {
   margin-top: 10px;
 }
 
+/* Caption */
 .caption p.degree {
   margin-bottom: 0;
 }
 
+/* Icon grid */
 .icon-grid {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;  /* centers the whole group horizontally */
+  justify-content: center;  /* centers the group horizontally */
   gap: 12px;
   max-width: 180px; /* fits 3 icons per row */
   margin: 0 auto;
@@ -383,7 +388,7 @@ ul li {
   transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
 }
 
-/* Special fix for ORCID: same square box but also center image inside container */
+/* Special fix for ORCID */
 .icon-grid a:first-child img {
   max-width: 36px;
   max-height: 36px;
@@ -394,22 +399,22 @@ ul li {
 }
 
 .icon-item span {
-  font-size: 0.9rem;      /* normal size */
+  font-size: 0.9rem;
   transition: font-size 0.3s ease, opacity 0.3s ease;
   opacity: 0;
 }
 
 .icon-item:hover span {
-  font-size: 1.3rem;      /* bigger on hover */
+  font-size: 1.3rem;
   opacity: 1;
 }
-
 
 .icon-item:hover img {
   transform: scale(1.1);
   opacity: 0.9;
 }
 
+/* Service list */
 .service-list {
   list-style-type: disc;
   padding-left: 20px;
@@ -427,144 +432,7 @@ ul li {
   line-height: 1.5;
 }
 
+/* Update cards */
 .update-card {
   display: flex;
-  align-items: stretch; /* Equal height text and image */
-  background-color: #ffffff;
-  border: 2px solid #08093D;
-  border-radius: 20px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  padding: 0; /* remove padding from container */
-  margin: 20px auto;
-  width: 95%;
-  max-width: 1300px;
-  overflow: hidden;
-}
-
-.update-text {
-  flex: 2;
-  font-size: 16px;
-  line-height: 1.6;
-  padding: 20px 20px 20px 30px; /* top, right, bottom, LEFT padding */
-}
-
-.update-image {
-  flex: 1.2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px; /* ensures image doesn’t touch the edge */
-  background-color: #ffffff;
-}
-
-.update-image img {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-  max-height: 180px;
-  object-fit: contain; /* No cropping, image scaled to fit */
-  border-radius: 12px;
-}
-
-#service a.service-link {
-  text-decoration: underline;
-  color: inherit;
-}
-
-#service a.service-link:hover {
-  color: #003366;
-}
-
-#service a.service-link:visited {
-  color: inherit;
-}
-
-a.outreach-link {
-  text-decoration: underline;
-  color: inherit;
-}
-
-a.outreach-link:hover {
-  color: #003366;
-}
-
-a.outreach-link:visited {
-  color: inherit;
-}
-
-
-.photo-outreach {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 16px;
-  margin-bottom: 30px;
-  margin-top: 10px;
-}
-
-.photo-crop2-container {
-  width: 240px;   /* increased width */
-  height: 180px;  /* increased height */
-  overflow: hidden;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #fff;
-}
-
-.photo-crop2-container img {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain; /* no crop, keep aspect ratio */
-  transition: transform 0.3s ease;
-}
-
-.photo-crop2-container img:hover {
-  transform: scale(1.05);
-}
-
-/* Tablet and below */
-@media (max-width: 768px) {
-  .photo-gallery img {
-    width: 30%;
-    max-width: 100px;
-  }
-}
-
-/* Mobile-specific adjustments */
-@media (max-width: 600px) {
-  body {
-    font-size: 16px;
-  }
-
-  .update-card {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .update-image {
-    width: 100%;
-    margin-top: 15px;
-  }
-
-  .update-text, .about-text {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-}
-
-
-ul li {
-  margin-bottom: 10px; /* You can adjust the value */
-}
-
-
-body {
-  font-size: 18px;
-}
-
-html {
-  scroll-behavior: smooth;
-}
+  align-items: stretch; /* Equal height
