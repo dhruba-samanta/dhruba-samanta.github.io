@@ -6,7 +6,6 @@ This work is proprietary and confidential. You may not reproduce or use any port
 For permissions, contact: dhruba.samanta@hotmail.com
 */
 
-
 /* Basic reset for margin and padding */
 * {
   margin: 0.0px;
@@ -83,11 +82,11 @@ For permissions, contact: dhruba.samanta@hotmail.com
   transform: translateY(0);
 }
 
+/* Merged ul li rules (was twice) */
 ul li {
   margin-bottom: 10px;  /* Controls vertical space between bullet points */
   line-height: 1.5em;   /* Optional: improves readability */
 }
-
 
 /* About Me Section - Container for Text and Image */
 #about .about-container {
@@ -153,56 +152,20 @@ ul li {
   color: #666;
 }
 
-.photo-experience {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-  justify-content: center;
-  margin-bottom: 30px;
-}
-
-.photo-crop-container {
-  width: 160px;
-  height: 120px;
-  overflow: hidden;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #fff; /* for transparent edges if needed */
-}
-
-.photo-crop-container img {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
-  transition: transform 0.3s ease;
-}
-
-.photo-crop-container img:hover {
-  transform: scale(1.05);
-}
-
-
-
-  .photo-service {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-  justify-content: center;
-  margin-bottom: 30px;
-}
-
+/* Merged .photo-experience and .photo-service */
+.photo-experience,
 .photo-service {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px; /* space between photos */
+  gap: 16px;
   justify-content: center;
-  margin-bottom: 2rem;
+  margin-bottom: 30px;
 }
 
+/* .photo-service had margin-bottom: 2rem; and 30px, kept 30px */
 
+/* .photo-crop-container and .photo-crop1-container merged */
+.photo-crop-container,
 .photo-crop1-container {
   width: 160px;
   height: 120px;
@@ -215,6 +178,7 @@ ul li {
   background-color: #fff; /* for transparent edges if needed */
 }
 
+.photo-crop-container img,
 .photo-crop1-container img {
   max-width: 100%;
   max-height: 100%;
@@ -222,20 +186,16 @@ ul li {
   transition: transform 0.3s ease;
 }
 
+.photo-crop-container img:hover,
 .photo-crop1-container img:hover {
   transform: scale(1.05);
 }
-
-
-
-
 
 .service-list {
   padding-left: 0.5em;  /* adjust this to match your normal ul spacing */
   margin-left: 0;       /* removes extra indentation */
   list-style-type: disc; /* ensures bullets match other sections */
 }
-
 
 .photo-gallery {
   display: flex;
@@ -246,7 +206,7 @@ ul li {
 }
 
 .photo-gallery img {
-    width: 11.5%;
+  width: 11.5%;
   max-width: 115px;
   object-fit: cover;
   border-radius: 8px;
@@ -256,6 +216,14 @@ ul li {
 
 .photo-gallery img:hover {
   transform: scale(1.05);
+}
+
+.photo-service2 {
+  display: flex;
+  flex-wrap: wrap;       /* Allows wrapping on small screens */
+  gap: 14px;              /* Space between images */
+  justify-content: center; /* Aligns images to the center */
+  margin-bottom: 30px;
 }
 
 .photo-service2 img {
@@ -270,15 +238,6 @@ ul li {
   padding: 4px;                 /* Optional: keeps spacing around images */
 }
 
-
-.photo-service2 {
-  display: flex;
-  flex-wrap: wrap;       /* Allows wrapping on small screens */
-  gap: 14px;              /* Space between images */
-  justify-content: center; /* Aligns images to the center */
-  margin-bottom: 30px;
-}
-
 .photo-service2 img:hover {
   transform: scale(1.05);
 }
@@ -290,7 +249,6 @@ ul li {
   }
 }
 
-
 /* Bottom Profile Image (Full Width) */
 .bottom-profile-image {
   display: block;
@@ -300,8 +258,7 @@ ul li {
   margin-bottom: 20px;
 }
 
-/* Footer - Copyright */
-
+/* Merged .copyright-info */
 .copyright-info {
   display: block;
   width: 100%;
@@ -311,40 +268,27 @@ ul li {
   margin-top: 10px;
   padding: 10px 0;
   clear: both; /* Add this to prevent float overlap */
-}
-
-.copyright-info {
   margin-left: auto;
   margin-right: auto;
 }
 
-#publications ol li {
+#publications ol li,
+#presentations ol li {
   margin-top: 20px;   /* Adds space before each numbered item */
   margin-bottom: 0;   /* No extra space after the <li> */
   line-height: 1.6;   /* Optional: improve readability */
 }
 
-#publications a {
+#publications a,
+#publications a:visited {
   color: #003366 !important;        /* deep blue color */
   text-decoration: underline !important;
   cursor: pointer;
 }
 
-#publications a:visited {
-  color: #003366 !important;        /* same color, no change after click */
-  text-decoration: underline !important;
-}
-
 #publications a:hover {
   color: #0059b3 !important;        /* slightly lighter blue on hover */
   text-decoration: underline !important;
-}
-
-
-#presentations ol li {
-  margin-top: 20px;   /* Adds space before each numbered item */
-  margin-bottom: 0;   /* No extra space after the <li> */
-  line-height: 1.6;   /* Optional: improve readability */
 }
 
 .wordcloud-container {
@@ -410,7 +354,6 @@ ul li {
   font-size: 1.3rem;      /* bigger on hover */
   opacity: 1;
 }
-
 
 .icon-item:hover img {
   transform: scale(1.1);
@@ -499,7 +442,6 @@ a.outreach-link:visited {
   color: inherit;
 }
 
-
 .photo-outreach {
   display: flex;
   flex-wrap: wrap;
@@ -532,7 +474,6 @@ a.outreach-link:visited {
   transform: scale(1.05);
 }
 
-
 /* Optional: Responsive fallback for mobile */
 @media (max-width: 600px) {
   .update-card {
@@ -546,14 +487,12 @@ a.outreach-link:visited {
   }
 }
 
-
-ul li {
-  margin-bottom: 10px; /* You can adjust the value */
-}
-
-
 body {
   font-size: 18px;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 html {
