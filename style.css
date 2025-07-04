@@ -1,5 +1,3 @@
-/* © 2025 Dhrubajyoti Samanta. All rights reserved. Do not reuse. */
-
 /* Basic reset for margin and padding */
 * {
   margin: 0.0px;
@@ -592,8 +590,8 @@ html {
     showSection(defaultTabId);
 
     // Highlight the default tab in the navigation
-    const defaultTabLink = document.querySelector(.nav-link[href="#${defaultTabId}"]);
-    if (defaultTabLink) {
+      const defaultTabLink = document.querySelector(`.nav-link[href="#${defaultTabId}"]`);
+       if (defaultTabLink) {
         defaultTabLink.classList.add("active");
     }
 }
