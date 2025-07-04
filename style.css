@@ -1,601 +1,156 @@
-/* © 2025 Dhrubajyoti Samanta. All rights reserved. Do not reuse. */
-
-/* Basic reset for margin and padding */
-* {
-  margin: 0.0px;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Site Header Styling */
-.site-header {
-  background-color: #000;
-  color: #fff;
-  text-align: center;
-  padding: 15px 0;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 10000;
-}
-
-.site-header h1 {
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
   margin: 0;
-  font-size: 2rem;
+  padding: 0;
+  line-height: 1.5;
 }
 
-/* Horizontal Navbar Styling */
-.navbar {
-  background-color: #333;
+header {
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 15px 20px;
+  text-align: center;
+}
+
+nav {
   display: flex;
   justify-content: center;
-  padding: 10px 0;
-  position: fixed;
-  top: 60px;
-  width: 100%;
-  z-index: 9999;
+  background-color: #34495e;
+  flex-wrap: wrap;
 }
 
-.navbar a {
+.nav-link {
   color: white;
-  padding: 14px 20px;
+  padding: 10px 20px;
   text-decoration: none;
-  text-align: center;
-  transition: background-color 0.3s, color 0.3s;
-  border-radius: 25px;
-  margin: 0 5px;
+  transition: background-color 0.3s;
 }
 
-.navbar a:hover {
-  background-color: #ddd;
-  color: black;
+.nav-link:hover,
+.nav-link.active {
+  background-color: #2c3e50;
 }
 
-.navbar a.active {
-  background-color: #1E90FF;
-  color: white;
-}
-
-/* Tab Content */
-.tab-content {
-  display: none;
-  opacity: 0;
-  transform: translateY(10px);
-  transition: opacity 0.3s ease, transform 0.3s ease;
-  margin-top: 140px;
+section {
   padding: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
-  box-sizing: border-box;
 }
 
-.tab-content.active {
-  display: block;
-  opacity: 1;
-  transform: translateY(0);
+h1, h2 {
+  color: #2c3e50;
+}
+
+footer {
+  background-color: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 10px 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
 
 ul li {
-  margin-bottom: 10px;  /* Controls vertical space between bullet points */
-  line-height: 1.5em;   /* Optional: improves readability */
+  margin-bottom: 10px;
+  line-height: 1.5em;
 }
 
-
-/* Fix horizontal overflow */
-body {
-  max-width: 100%;
-  overflow-x: hidden;
-}
-
-/* Ensure tabs have flexible margin and padding */
-.tab-content {
-  display: none;
-  opacity: 0;
-  transform: translateY(10px);
-  transition: opacity 0.3s ease, transform 0.3s ease;
-  margin-top: 140px;
-  padding: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
-  box-sizing: border-box;
-}
-
-.tab-content.active {
-  display: block;
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* Responsive fixes for mobile and tablet */
-@media (max-width: 768px) {
-  .tab-content {
-    margin-top: 100px;
-    margin-left: 10px;
-    margin-right: 10px;
-    padding: 15px;
-  }
-
-  .update-card {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .update-image {
-    width: 100%;
-    margin-top: 15px;
-  }
-
-  .update-text, .about-text {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-
-  .photo-gallery img {
-    width: 30%;
-    max-width: 100px;
-    height: auto;
-  }
-}
-
-@media (max-width: 600px) {
-  body {
-    font-size: 16px;
-  }
-
-  .tab-content {
-    margin-top: 80px;
-    margin-left: 10px;
-    margin-right: 10px;
-    padding: 10px;
-  }
-
-  .photo-gallery img {
-    width: 100%;
-    max-width: 100px;
-  }
-}
-
-
-
-
-/* About Me Section - Container for Text and Image */
-#about .about-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 30px;
-  margin-top: 40px;
-  max-width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  flex-wrap: wrap; /* Enables wrapping on smaller screens */
-}
-
-/* Text Section */
-#about .about-text {
-  flex: 2; /* More space to text */
-  line-height: 1.6;
-}
-
-/* Profile Image Box */
-#about .about-image-box {
-  width: 320px; /* Increased width */
-  min-width: 300px;
-  height: auto; /* Let height adjust automatically */
-  padding: 10px;
-  background-color: #f4f4f4;
-  border-radius: 12px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-direction: column;
-  text-align: center;
-}
-
-/* Image inside the profile image box */
-#about .about-image-box img {
-  width: 100%;
-  height: auto;
-  border-radius: 12px;
-  object-fit: cover;
-  display: block;
-}
-
-/* Caption below the image */
-.about-image-box .caption {
-  margin-top: 12px;
-  width: 100%;
-  text-align: center;
-  white-space: nowrap; /* Prevent text from wrapping */
-  overflow: hidden;
-  text-overflow: ellipsis; /* Adds "..." if still too long */
-}
-
-.about-image-box .caption .name {
-  font-weight: bold;
-  font-size: 1.1rem;
-}
-
-.about-image-box .caption .degree {
-  font-size: 1rem;
-  color: #666;
-}
-
-.photo-experience {
+.photo-gallery {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
   justify-content: center;
-  margin-bottom: 30px;
 }
 
-.photo-crop-container {
-  width: 160px;
-  height: 120px;
-  overflow: hidden;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #fff; /* for transparent edges if needed */
-}
-
-.photo-crop-container img {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
-  transition: transform 0.3s ease;
-}
-
-.photo-crop-container img:hover {
-  transform: scale(1.05);
-}
-
-
-
-  .photo-service {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-  justify-content: center;
-  margin-bottom: 30px;
+.photo-gallery img {
+  margin: 10px;
+  border-radius: 10px;
+  width: 11.5%;
+  max-width: 115px;
 }
 
 .photo-service {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px; /* space between photos */
   justify-content: center;
-  margin-bottom: 2rem;
 }
 
-
-.photo-crop1-container {
-  width: 160px;
-  height: 120px;
-  overflow: hidden;
+.photo-service img {
+  margin: 5px;
   border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #fff; /* for transparent edges if needed */
-}
-
-.photo-crop1-container img {
-  max-width: 100%;
-  max-height: 100%;
+  width: 80px;
+  height: 80px;
   object-fit: contain;
-  transition: transform 0.3s ease;
 }
 
-.photo-crop1-container img:hover {
-  transform: scale(1.05);
-}
-
-
-
-
-
-.service-list {
-  padding-left: 0.5em;  /* adjust this to match your normal ul spacing */
-  margin-left: 0;       /* removes extra indentation */
-  list-style-type: disc; /* ensures bullets match other sections */
-}
-
-
-.photo-gallery {
-  display: flex;
-  flex-wrap: wrap;       /* Allows wrapping on small screens */
-  gap: 14px;              /* Space between images */
-  justify-content: center; /* Aligns images to the center */
-  margin-bottom: 30px;
-}
-
-.photo-gallery img {
-    width: 11.5%;
-  max-width: 115px;
-  object-fit: cover;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-  transition: transform 0.3s ease;
-}
-
-.photo-gallery img:hover {
-  transform: scale(1.05);
-}
-
-.photo-service2 img {
-  width: 13%;
-  max-width: 400px;
-  height: 400px;                /* Set height to keep layout even */
-  object-fit: contain;          /* Ensures no cropping */
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-  transition: transform 0.3s ease;
-  background-color: #f5f5f5;    /* Optional: helps when image has empty space */
-  padding: 4px;                 /* Optional: keeps spacing around images */
-}
-
-
-.photo-service2 {
-  display: flex;
-  flex-wrap: wrap;       /* Allows wrapping on small screens */
-  gap: 14px;              /* Space between images */
-  justify-content: center; /* Aligns images to the center */
-  margin-bottom: 30px;
-}
-
-.photo-service2 img:hover {
-  transform: scale(1.05);
-}
-
-
-/* Bottom Profile Image (Full Width) */
-.bottom-profile-image {
-  display: block;
-  width: 100%;
-  height: auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-/* Footer - Copyright */
-
-.copyright-info {
-  display: block;
-  width: 100%;
-  text-align: center;
-  font-size: 14px;
-  color: #555;
-  margin-top: 10px;
-  padding: 10px 0;
-  clear: both; /* Add this to prevent float overlap */
-}
-
-.copyright-info {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#publications ol li {
-  margin-top: 20px;   /* Adds space before each numbered item */
-  margin-bottom: 0;   /* No extra space after the <li> */
-  line-height: 1.6;   /* Optional: improve readability */
-}
-
-#publications a {
-  color: #003366 !important;        /* deep blue color */
-  text-decoration: underline !important;
-  cursor: pointer;
-}
-
-#publications a:visited {
-  color: #003366 !important;        /* same color, no change after click */
-  text-decoration: underline !important;
-}
-
-#publications a:hover {
-  color: #0059b3 !important;        /* slightly lighter blue on hover */
-  text-decoration: underline !important;
-}
-
-
-#presentations ol li {
-  margin-top: 20px;   /* Adds space before each numbered item */
-  margin-bottom: 0;   /* No extra space after the <li> */
-  line-height: 1.6;   /* Optional: improve readability */
-}
-
-.wordcloud-container {
-  text-align: center;
-  margin-top: 30px;
-}
-
-.wordcloud-container p {
-  font-style: italic;
-  color: #555;
-  margin-top: 10px;
-}
-
-.caption p.degree {
-  margin-bottom: 0;
-}
-
-.icon-grid {
+.photo-crop-container, .photo-crop1-container, .photo-crop2-container, .photo-crop3-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;  /* centers the whole group horizontally */
-  gap: 12px;
-  max-width: 180px; /* fits 3 icons per row */
-  margin: 0 auto;
+  justify-content: center;
 }
 
-.icon-grid a {
-  width: 52px;          /* fixed square container */
-  height: 52px;
-  display: flex;
-  align-items: center;  /* vertical centering */
-  justify-content: center; /* horizontal centering */
-  box-sizing: border-box;
-  background: transparent;
-}
-
-.icon-grid img {
-  max-width: 36px;
-  max-height: 36px;
+.photo-crop-container img,
+.photo-crop1-container img,
+.photo-crop2-container img,
+.photo-crop3-container img {
+  margin: 10px;
+  border-radius: 10px;
+  width: 80px;
+  height: 80px;
   object-fit: contain;
-  display: block;
-  margin: 0 auto;
-  transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
 }
 
-/* Special fix for ORCID: same square box but also center image inside container */
-.icon-grid a:first-child img {
-  max-width: 36px;
-  max-height: 36px;
-  object-fit: contain;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-}
-
-.icon-item span {
-  font-size: 0.9rem;      /* normal size */
-  transition: font-size 0.3s ease, opacity 0.3s ease;
-  opacity: 0;
-}
-
-.icon-item:hover span {
-  font-size: 1.3rem;      /* bigger on hover */
-  opacity: 1;
-}
-
-
-.icon-item:hover img {
-  transform: scale(1.1);
-  opacity: 0.9;
-}
-
-.service-list {
-  list-style-type: disc;
-  padding-left: 20px;
-  margin-bottom: 1em;
-}
-
-.service-list li {
-  margin-bottom: 10px;
-}
-
-.service-list .subtext {
-  font-weight: normal;
-  margin-top: 4px;
-  margin-left: 10px;
-  line-height: 1.5;
+.news-update {
+  padding: 20px;
 }
 
 .update-card {
   display: flex;
-  align-items: stretch; /* Equal height text and image */
-  background-color: #ffffff;
-  border: 2px solid #08093D;
-  border-radius: 20px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  padding: 0; /* remove padding from container */
-  margin: 20px auto;
-  width: 95%;
-  max-width: 1300px;
-  overflow: hidden;
-}
-
-.update-text {
-  flex: 2;
-  font-size: 16px;
-  line-height: 1.6;
-  padding: 20px 20px 20px 30px; /* top, right, bottom, LEFT padding */
+  flex-direction: row;
+  align-items: flex-start;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #f9f9f9;
 }
 
 .update-image {
-  flex: 1.2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px; /* ensures image doesn’t touch the edge */
-  background-color: #ffffff;
+  flex: 0 0 auto;
+  width: 150px;
+  margin-right: 20px;
 }
 
 .update-image img {
   width: 100%;
-  max-width: 100%;
   height: auto;
   max-height: 180px;
-  object-fit: contain; /* No cropping, image scaled to fit */
-  border-radius: 12px;
+  object-fit: contain;
+  border-radius: 5px;
 }
 
-#service a.service-link {
-  text-decoration: underline;
-  color: inherit;
+.update-text {
+  flex: 1 1 auto;
 }
 
-#service a.service-link:hover {
-  color: #003366;
+.update-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
 }
 
-#service a.service-link:visited {
-  color: inherit;
+.update-date {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
 }
 
-a.outreach-link {
-  text-decoration: underline;
-  color: inherit;
+.update-description {
+  font-size: 16px;
+  color: #333;
 }
 
-a.outreach-link:hover {
-  color: #003366;
-}
-
-a.outreach-link:visited {
-  color: inherit;
-}
-
-
-.photo-outreach {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 16px;
-  margin-bottom: 30px;
-  margin-top: 10px;
-}
-
-.photo-crop2-container {
-  width: 240px;   /* increased width */
-  height: 180px;  /* increased height */
-  overflow: hidden;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #fff;
-}
-
-.photo-crop2-container img {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain; /* no crop, keep aspect ratio */
-  transition: transform 0.3s ease;
-}
-
-.photo-crop2-container img:hover {
-  transform: scale(1.05);
-}
-
-
+/* Media query for tablets and small screens */
+@media (max-width: 768px) {
   .update-card {
     flex-direction: column;
     text-align: center;
@@ -603,32 +158,42 @@ a.outreach-link:visited {
 
   .update-image {
     width: 100%;
-    margin-top: 15px;
+    margin: 0 auto 15px;
   }
 
-  .update-text, .about-text {
-    padding-left: 15px;
-    padding-right: 15px;
+  .update-image img {
+    max-width: 90%;
+    height: auto;
   }
 }
 
+/* Media query for mobile phones */
+@media (max-width: 600px) {
+  .nav-link {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
 
-ul li {
-  margin-bottom: 10px; /* You can adjust the value */
-}
+  .photo-gallery img {
+    width: 28%;
+    max-width: none;
+  }
 
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  max-width: 100%;
-  overflow-x: hidden;
-}
+  .photo-service img {
+    width: 60px;
+    height: 60px;
+  }
 
-body {
-  font-size: 18px;
-}
+  .photo-crop-container img,
+  .photo-crop1-container img,
+  .photo-crop2-container img,
+  .photo-crop3-container img {
+    width: 60px;
+    height: 60px;
+  }
 
-html {
-  scroll-behavior: smooth;
+  .update-image img {
+    max-width: 85%;
+    height: auto;
+  }
 }
