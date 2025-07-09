@@ -452,11 +452,11 @@ a.outreach-link:visited {
 }
 
 .photo-crop9-container {
-  width: 300px;   /* increased width */
-  height: 300px;  /* increased height */
+  width: 400px;   /* increased width */
+  height: 350px;  /* increased height */
   overflow: hidden;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
   display: flex;
   justify-content: center;
   align-items: center;
