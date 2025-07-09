@@ -452,8 +452,8 @@ a.outreach-link:visited {
 }
 
 .photo-crop9-container {
-  width: 240px;   /* increased width */
-  height: 240px;  /* increased height */
+  width: 300px;   /* increased width */
+  height: 300px;  /* increased height */
   overflow: hidden;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
