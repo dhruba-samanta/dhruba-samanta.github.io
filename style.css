@@ -452,8 +452,9 @@ a.outreach-link:visited {
 }
 
 .photo-crop9-container {
-  width: 400px;   /* increased width */
-  height: 350px;  /* increased height */
+ width: 90%;                   /* ✅ Changed: responsive width */
+  max-width: 420px;             /* ✅ Added: prevent excessive width on large screens */
+  aspect-ratio: 4 / 3;          /* ✅ Added: consistent height without fixed px */
   overflow: hidden;
   border-radius: 4px;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
