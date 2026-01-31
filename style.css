@@ -242,12 +242,6 @@ ul li {
   transform: scale(1.05);
 }
 
-@media (max-width: 768px) {
-  .photo-gallery img {
-    width: 30%;
-    max-width: 100px;
-  }
-}
 
 /* Bottom Profile Image (Full Width) */
 .bottom-profile-image {
@@ -510,6 +504,14 @@ a.outreach-link:visited {
 }
 
 /* Optional: Responsive fallback for mobile */
+
+@media (max-width: 768px) {
+  .photo-gallery img {
+    width: 30%;
+    max-width: 100px;
+  }
+}
+
 @media (max-width: 600px) {
   .update-card {
     flex-direction: column;
@@ -576,6 +578,21 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+  .site-header {
+    position: static;
+  }
+
+  .navbar {
+    position: static;
+  }
+
+  .tab-content {
+    margin-top: 20px; /* override 140px */
+  }
+}
+
+/* ----------*/
 
 
 html {
