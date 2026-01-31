@@ -615,6 +615,16 @@ a.outreach-link:visited {
 }
 
 @media (max-width: 768px) {
+  .navbar::after {
+    content: "⇠ swipe ⇢";
+    font-size: 0.8rem;
+    color: #aaa;
+    margin-left: 8px;
+    align-self: center;
+  }
+}
+
+@media (max-width: 768px) {
   .navbar {
     scroll-snap-type: x proximity;
   }
