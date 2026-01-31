@@ -636,6 +636,9 @@ a.outreach-link:visited {
 
 /* ----------*/
 
+body {
+  font-size: 19px;
+}
 
 html {
   scroll-behavior: smooth;
