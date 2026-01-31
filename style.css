@@ -597,10 +597,6 @@ body {
 
 html {
   scroll-behavior: smooth;
-}
-
-html {
-  scroll-behavior: smooth;
 }]] and here is my js [[document.addEventListener("DOMContentLoaded", function () {
     const navLinks = document.querySelectorAll(".nav-link");
     const tabContents = document.querySelectorAll(".tab-content");
