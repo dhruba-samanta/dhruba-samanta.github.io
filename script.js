@@ -1,46 +1,43 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const navLinks = document.querySelectorAll(".nav-link");
-    const tabContents = document.querySelectorAll(".tab-content");
+  const navLinks = document.querySelectorAll(".nav-link");
+  const tabContents = document.querySelectorAll(".tab-content");
 
-    // Function to hide all sections and remove active classes
-    function hideAllSections() {
-        tabContents.forEach(section => section.classList.remove("active"));
-        navLinks.forEach(link => link.classList.remove("active"));
+  function hideAllSections() {
+    tabContents.forEach(section => section.classList.remove("active"));
+    navLinks.forEach(link => link.classList.remove("active"));
+  }
+
+  function showSection(targetId) {
+    const targetSection = document.getElementById(targetId);
+    if (targetSection) {
+      targetSection.classList.add("active");
+      const activeLink = document.querySelector(`.nav-link[href="#${targetId}"]`);
+      if (activeLink) activeLink.classList.add("active");
     }
+  }
 
-    // Function to show the target section
-    function showSection(targetId) {
-        const targetSection = document.getElementById(targetId);
-        if (targetSection) {
-            targetSection.classList.add("active");
-        }
-    }
-
-    // Set up click event listeners for each navigation link
-    navLinks.forEach(link => {
-        link.addEventListener("click", function (event) {
-            event.preventDefault(); // Prevent default anchor behavior
-
-            // Get the target section ID from the href attribute
-            const targetId = this.getAttribute("href").substring(1);
-
-            // Hide all sections and remove active class from all links
-            hideAllSections();
-
-            // Show the selected section and add active class to the clicked link
-            showSection(targetId);
-            this.classList.add("active");
-        });
-    });
-
-    // Initialize the correct first tab on page load
-    const defaultTabId = "about"; // Set the homepage default tab (ensure this matches your ID)
+  // 🔹 Show tab from URL hash OR fallback to default
+  function showInitialTab() {
+    const hash = window.location.hash.replace("#", "");
+    const initialTab = hash || "about";
     hideAllSections();
-    showSection(defaultTabId);
+    showSection(initialTab);
+  }
 
-    // Highlight the default tab in the navigation
-    const defaultTabLink = document.querySelector(`.nav-link[href="#${defaultTabId}"]`);
-    if (defaultTabLink) {
-        defaultTabLink.classList.add("active");
-    }
+  // Navbar click handling (unchanged behavior)
+  navLinks.forEach(link => {
+    link.addEventListener("click", function (event) {
+      event.preventDefault();
+      const targetId = this.getAttribute("href").substring(1);
+      hideAllSections();
+      showSection(targetId);
+      history.pushState(null, "", `#${targetId}`);
+    });
+  });
+
+  // Initial load
+  showInitialTab();
+
+  // Handle back / forward navigation
+  window.addEventListener("hashchange", showInitialTab);
 });
