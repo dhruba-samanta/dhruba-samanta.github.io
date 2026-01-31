@@ -26,12 +26,15 @@ document.addEventListener("DOMContentLoaded", function () {
       const activeLink = document.querySelector(`.nav-link[href="#${targetId}"]`);
       if (activeLink) activeLink.classList.add("active");
 
-      // 🔹 Track tab view
+      // 🔹 Track analytics
       trackTabView(targetId);
+
+      // 🔹 UX fix: always start tab at top (important for mobile)
+      window.scrollTo({ top: 0, behavior: "smooth" });
     }
   }
 
-  // 🔹 Show tab from URL hash OR fallback to default
+  // 🔹 Load tab from URL hash or default
   function showInitialTab() {
     const hash = window.location.hash.replace("#", "");
     const initialTab = hash || "about";
