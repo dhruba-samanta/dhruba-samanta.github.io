@@ -611,8 +611,18 @@ a.outreach-link:visited {
     width: 100%;
     margin-top: 15px;
   }
+  
 }
 
+@media (max-width: 768px) {
+  .navbar {
+    scroll-snap-type: x proximity;
+  }
+
+  .navbar a {
+    scroll-snap-align: start;
+   }
+  }
 
 /* ----------*/
 
