@@ -561,11 +561,11 @@ a.outreach-link:visited {
 }
 
 .country-name {
-  font-weight: 700;
-  margin-bottom: 4px;
-   line-height: 1.2;
+  font-weight: 400;   /* regular, not bold */
+  font-size: 0.98rem;
+  line-height: 1.2;
+  margin: 0;
 }
-
 
 /*  Responsive fallback for mobile */
 /* ===============================
