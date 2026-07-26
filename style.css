@@ -526,25 +526,30 @@ a.outreach-link:visited {
 /* =========================================
    COUNTRY EXPERIENCE ROW
    ========================================= */
-
 .country-grid {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  gap: 14px;
-  padding: 22px;
-  background: #f5f8fc;
-  border: 1px solid #e2e8f0;
-  border-radius: 14px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  gap: 0;
+
+  padding: 8px 0;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
 }
+
 
 .country-item {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   text-align: center;
-  padding: 12px 8px;
-  border-right: 1px solid #dde3eb;
+
+  padding: 8px 10px;
+  min-height: 95px;
+
+  border-right: 1px solid #e3e7ee;
 }
 
 .country-item:last-child {
@@ -554,20 +559,14 @@ a.outreach-link:visited {
 .country-flag {
   font-size: 2.4rem;
   line-height: 1;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 }
 
 .country-name {
   font-weight: 700;
   margin-bottom: 4px;
+   line-height: 1.2;
 }
-
-.country-role {
-  color: #666;
-  font-size: 0.82rem;
-  line-height: 1.3;
-}
-
 
 
 /*  Responsive fallback for mobile */
