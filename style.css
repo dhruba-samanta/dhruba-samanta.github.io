@@ -227,7 +227,7 @@ ul li {
 }
 
 .photo-service2 img {
-  width: 13%;
+  width: 18%;
   max-width: 400px;
   height: 350px;                /* Set height to keep layout even */
   object-fit: contain;          /* Ensures no cropping */
