@@ -526,18 +526,16 @@ a.outreach-link:visited {
 /* =========================================
    COUNTRY EXPERIENCE ROW
    ========================================= */
+
 .country-grid {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(6, minmax(0, 1fr));
   gap: 0;
-
-  padding: 8px 0;
+  padding: 4px 0 8px;
   background: transparent;
   border: none;
-  border-radius: 0;
   box-shadow: none;
 }
-
 
 .country-item {
   display: flex;
@@ -546,8 +544,8 @@ a.outreach-link:visited {
   justify-content: center;
   text-align: center;
 
-  padding: 8px 10px;
-  min-height: 95px;
+  padding: 6px 4px;
+  min-height: 78px;
 
   border-right: 1px solid #e3e7ee;
 }
@@ -557,9 +555,9 @@ a.outreach-link:visited {
 }
 
 .country-flag {
-  font-size: 2.4rem;
+  font-size: 2.1rem;
   line-height: 1;
-  margin-bottom: 6px;
+  margin-bottom: 5px;
 }
 
 .country-name {
@@ -699,6 +697,54 @@ a.outreach-link:visited {
     scroll-snap-align: start;
    }
   }
+
+
+@media (max-width: 900px) {
+  .country-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .country-item:nth-child(3n) {
+    border-right: none;
+  }
+
+  .country-item {
+    border-bottom: 1px solid #e3e7ee;
+  }
+
+  .country-item:nth-last-child(-n+3) {
+    border-bottom: none;
+  }
+}
+
+@media (max-width: 520px) {
+  .country-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .country-item {
+    border-right: 1px solid #e3e7ee;
+    border-bottom: 1px solid #e3e7ee;
+    min-height: 72px;
+    padding: 8px 3px;
+  }
+
+  .country-item:nth-child(2n) {
+    border-right: none;
+  }
+
+  .country-item:nth-last-child(-n+2) {
+    border-bottom: none;
+  }
+
+  .country-flag {
+    font-size: 1.8rem;
+  }
+
+  .country-name {
+    font-size: 0.92rem;
+  }
+}
 
 /* ----------*/
 
