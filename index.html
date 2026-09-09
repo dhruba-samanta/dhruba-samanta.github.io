@@ -173,6 +173,21 @@
     });
 </script>
 
+<!-------------------------------- -->	 
+ <div id="research" class="tab-content container">
+  <div id="research-content"></div>
+</div>
+
+<script>
+  // Load research section from external file
+  fetch('content/research.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('research-content').innerHTML = data;
+    });
+</script>
+	
+	
 <!----------------------------------- -->	
 
 <div id="publications" class="tab-content container">
@@ -203,20 +218,7 @@
     });
 </script>
 
-<!-------------------------------- -->	 
- <div id="research" class="tab-content container">
-  <div id="research-content"></div>
-</div>
 
-<script>
-  // Load research section from external file
-  fetch('content/research.html')
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById('research-content').innerHTML = data;
-    });
-</script>
-	
 <!-------------------------------- -->
  
   <div id="presentations" class="tab-content container">
