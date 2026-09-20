@@ -566,6 +566,11 @@ a.outreach-link:visited {
   font-weight: 400;
   line-height: 1.2;
 }
+
+ol > li {
+    margin-bottom: 10px;
+    line-height: 1.45;
+}
 /*  Responsive fallback for mobile */
 /* ===============================
    MOBILE RESPONSIVE STYLES
