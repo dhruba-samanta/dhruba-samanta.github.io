@@ -571,6 +571,13 @@ ol > li {
     margin-bottom: 10px;
     line-height: 1.45;
 }
+
+h3 {
+    margin-top: 24px;
+    margin-bottom: 12px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #e5e5e5;
+}
 /*  Responsive fallback for mobile */
 /* ===============================
    MOBILE RESPONSIVE STYLES
